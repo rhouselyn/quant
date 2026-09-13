@@ -1,0 +1,18 @@
+[project]
+name = "quant-mvp"
+version = "0.1.0"
+description = "Daily quant MVP with temporal contrastive learning and a Mamba-style encoder"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "pandas>=2.0",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+  "torch>=2.0",
+  "pyarrow>=12.0",
+  "flask>=2.3",
+  "baostock>=0.8.9",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
