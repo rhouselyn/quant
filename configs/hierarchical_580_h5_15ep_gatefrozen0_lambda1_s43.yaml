@@ -1,0 +1,66 @@
+seed: 43
+n_stocks: 580
+activation_checkpointing: true
+n_days: 520
+frequency: weekly
+lookback: 40
+context_lengths:
+- 40
+n_features: 24
+d_model: 96
+n_layers: 4
+embedding_dim: 128
+n_score_heads: 1
+group_size: 8
+batch_size: 16
+epochs: 15
+learning_rate: 0.0008
+weight_decay: 1.0e-05
+train_end: 364
+valid_end: 442
+transaction_cost_bps: 10
+score_weight: 1.0
+temporal_weight: 0.1
+rankic_weight: 0.5
+rankic_temperature: 0.05
+block_rank_weight: 0.0
+block_rank_blocks: 4
+block_rank_temperature: 0.1
+score_temperature: 1.0
+temperature: 0.1
+temporal_horizon: 5
+temporal_horizons:
+- 5
+extreme_frac: 0.2
+ema_decay: 0.99
+group_weight: 0.0
+group_warmup_epochs: 0
+provider: yahoo
+cache_path: data/sw_580_observed_features/weekly.parquet
+output_dir: outputs
+score_top_weight: 1.0
+score_bottom_weight: 1.0
+selection_metric: long_net_sharpe
+long_top_n: 20
+save_epoch_checkpoints: false
+screened_universe: true
+universe_name: Shenwan 29 industries x original 20 random eligible stocks
+universe_path: data/sw_580_observed_features/universe.csv
+industry_classification: Shenwan level 1 (current snapshot, retrospective)
+prepare_command: python scripts/prepare_hierarchy_580.py
+encoder_chunk_size: 580
+model_type: hierarchical_market
+market_path: data/sw_580_observed_features/market_features.csv
+attention_heads: 4
+global_layers: 2
+market_tokens: 1
+market_features: 6
+relation_gate_init: 0.0
+dropout: 0.1
+eval_batch_dates: 4
+min_history_weeks: 32
+common_training_horizon: 5
+torch_num_threads: 4
+freeze_relation_gates: true
+# Penalise the share of weekly score variance explained by industry means (eta squared).
+industry_exposure_weight: 1.0

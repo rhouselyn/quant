@@ -26,15 +26,24 @@ ENV/
 Thumbs.db
 
 # Generated datasets and experiment artifacts
-data/*.parquet
-data/*.csv
-data/*.json
-data/raw/
-data/processed/
+# Everything under data/ is produced by scripts/prepare_*.py or downloaded from the
+# vendor, so none of it belongs in git.  A leading pattern like data/*.parquet does NOT
+# match nested directories, which is how 773MB once escaped the ignore file.
+data/
 outputs/
 artifacts/
 tmp_cache/
-tmp_*.parquet
+*.parquet
+*.pkl
+*.pt
+*.pth
+*.ckpt
+# Vendor industry-classification export
+*.xls
+*.xlsx
+# Scratch files created at the repository root only
+/tmp_*.py
+/tmp_*.ipynb
 
 # Build/package artifacts
 build/

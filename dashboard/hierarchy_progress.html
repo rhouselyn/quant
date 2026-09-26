@@ -1,0 +1,24 @@
+<!doctype html><html lang="zh"><meta charset="utf-8"><title>580股分层模型训练</title>
+<style>body{font-family:system-ui,"Microsoft YaHei",sans-serif;margin:35px auto;max-width:1200px;padding:0 24px;color:#20354b;line-height:1.7;background:#f6f8fb}h1{font-size:27px}.note,.card,.panel{background:white;border:1px solid #dce5ee;border-radius:12px;padding:20px;margin:16px 0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{margin:0}.value{font-size:26px;font-weight:650}.muted{color:#697b8b}table{width:100%;border-collapse:collapse;font-size:14px}td,th{border-bottom:1px solid #e1e7ee;padding:10px;text-align:right}td:first-child,th:first-child{text-align:left}progress{width:100%;height:14px}a{color:#246fb4}.active{border-color:#3283c4}.error{color:#bd3737}@media(max-width:700px){.cards{grid-template-columns:1fr}.panel{overflow:auto}}</style>
+<h1>580股 · 行业分层注意力＋一个市场token</h1>
+<p>29个行业各20股，40周个股输入 → 行业内 / 行业间交替 → 最后一次行业内更新 → 单头score。</p>
+<div class="note"><strong id="phase">正在读取训练状态…</strong><p id="progressText" class="muted"></p><progress id="bar" max="30" value="0"></progress><p class="muted">三组各10轮，同一股票池、修复后的特征、初始化种子和交易成本。按验证集Top20净Sharpe选定方案后，才计算测试对照。页面每15秒更新，完成后自动展示结果。</p></div>
+<div class="cards" id="cards"></div>
+<div class="panel"><h2>已完成轮次的验证表现</h2><table><thead><tr><th>方案</th><th>轮次</th><th>总loss</th><th>验证RankIC</th><th>验证净Sharpe</th><th>验证净收益</th><th>轮次用时</th></tr></thead><tbody id="rows"></tbody></table></div>
+<p class="muted">off：关闭InfoNCE；h2：未来两周、权重0.1；h5：未来五周、权重0.1。InfoNCE作用于关系层前的时序表示和独立投影头；市场token不读取未来行情。</p>
+<p><a href="/industry-analysis" target="_blank">行业相关性诊断</a> · <a href="/" target="_blank">全部实验</a></p>
+<script>
+const names={off:'关闭InfoNCE',h2:'两周InfoNCE · 0.1',h5:'五周InfoNCE · 0.1'};
+const num=(x,d=3)=>Number.isFinite(x)?x.toFixed(d):'—';
+const percent=x=>Number.isFinite(x)?(x*100).toFixed(2)+'%':'—';
+async function update(){try{const r=await fetch('/api/hierarchy-progress');if(!r.ok)throw Error('进度服务暂不可用');const d=await r.json(),p=d.progress;let count=0,seconds=0;
+d.runs.forEach(r=>{count+=r.history.length;r.history.forEach(e=>seconds+=e.seconds||0)});
+document.getElementById('phase').textContent=p.status==='training'?'正在训练：'+(names[p.current]||p.current):p.status==='test_evaluation'?'验证选模已冻结，正在评估测试期':p.status==='failed'?'训练已停止：'+(p.error||'请查看运行日志'):'正在准备结果';
+document.getElementById('bar').value=count;
+document.getElementById('progressText').textContent='已完成 '+count+' / 30 轮'+(count?'；已完成轮次平均约 '+Math.round(seconds/count)+' 秒。':'；首轮完成后显示验证指标。');
+document.getElementById('cards').innerHTML=['off','h2','h5'].map(key=>{const r=d.runs.find(x=>x.method===key);return '<div class="card '+(p.current===key?'active':'')+'"><div>'+names[key]+'</div><div class="value">'+(r?r.history.length:0)+' / 10</div><div class="muted">最佳验证Sharpe '+num(r?.validation_sharpe)+' · 第 '+(r?.best_epoch||'—')+' 轮</div></div>'}).join('');
+document.getElementById('rows').innerHTML=d.runs.flatMap(r=>r.history.map(e=>'<tr><td>'+names[r.method]+'</td><td>'+e.epoch+'</td><td>'+num(e.loss)+'</td><td>'+num(e.val_rank_ic)+'</td><td>'+num(e.val_long_net_sharpe)+'</td><td>'+percent(e.val_long_net_return)+'</td><td>'+num(e.seconds,0)+'秒</td></tr>')).join('');
+if(p.status==='complete')location.reload();
+}catch(e){document.getElementById('phase').textContent=e.message}}
+update();setInterval(update,15000);
+</script></html>

@@ -111,7 +111,11 @@ def _yahoo_one(symbol: str, start: str, end: str, timeout: int = 20) -> pd.DataF
             "volume": np.asarray(q.get("volume"), dtype=float),
         })
         frame["amount"] = frame["close"] * frame["volume"]
-        return frame.dropna(subset=["close"])
+        frame = frame.dropna(subset=["close"])
+        meta = result.get("meta") or {}
+        frame.attrs["name"] = meta.get("longName") or meta.get("shortName") or ""
+        frame.attrs["instrument_type"] = meta.get("instrumentType", "")
+        return frame
     except Exception:
         return None
 

@@ -142,7 +142,12 @@ class MambaEncoder(nn.Module):
         """Return hidden states at every time step, before the embedding head."""
         h = self.input_proj(x)
         for block, is_mamba in zip(self.blocks, self._mamba_block_flags):
-            h = h + self.dropout(block(h)) if is_mamba else block(h)
+            if getattr(self, 'activation_checkpointing', False) and self.training and torch.is_grad_enabled():
+                from torch.utils.checkpoint import checkpoint
+                output = checkpoint(block, h, use_reentrant=False)
+            else:
+                output = block(h)
+            h = h + self.dropout(output) if is_mamba else output
         return self.norm(h)
 
     def forward(self, x: torch.Tensor, normalize: bool = True,
@@ -162,17 +167,20 @@ class MambaEncoder(nn.Module):
 
 
 class PairRanker(nn.Module):
-    """Shared encoder and scalar score head for cross-sectional ranking."""
+    """Shared encoder with multiple score heads averaged for ranking."""
 
-    def __init__(self, input_dim: int, **encoder_kwargs):
+    def __init__(self, input_dim: int, n_score_heads: int = 8, **encoder_kwargs):
         super().__init__()
         self.encoder = MambaEncoder(input_dim, **encoder_kwargs)
         dim = encoder_kwargs.get("embedding_dim", 128)
-        self.score = nn.Linear(dim, 1)
+        self.n_score_heads = max(int(n_score_heads), 1)
+        self.score = nn.Linear(dim, self.n_score_heads)
 
     def forward(self, x: torch.Tensor):
         z = self.encoder(x, normalize=True)
-        return z, self.score(z).squeeze(-1)
+        # Each head produces an independent scalar score.  The mean is the
+        # score consumed by the ranking loss and by inference/backtesting.
+        return z, self.score(z).mean(dim=-1)
 
     def pair_forward(self, x1: torch.Tensor, x2: torch.Tensor):
         z1, s1 = self(x1)
@@ -190,7 +198,9 @@ def ranknet_loss(score1: torch.Tensor, score2: torch.Tensor, y: torch.Tensor,
 
 
 def extreme_score_loss(score: torch.Tensor, label: torch.Tensor,
-                       temperature: float = 1.0, return_mask: bool = False):
+                       temperature: float = 1.0, return_mask: bool = False,
+                       top_weight: float = 1.0, bottom_weight: float = 1.0,
+                       sample_weight: torch.Tensor | None = None):
     """Binary logistic loss for a *single-stock* score.
 
     ``label`` is -1 for the bottom cross-sectional tail and +1 for the top
@@ -201,7 +211,16 @@ def extreme_score_loss(score: torch.Tensor, label: torch.Tensor,
     """
     mask = label.abs() > 0
     margin = score / max(float(temperature), 1e-6)
-    loss = F.softplus(-label[mask] * margin[mask]).mean() if mask.any() else margin.sum() * 0.0
+    if mask.any():
+        per_item = F.softplus(-label[mask] * margin[mask])
+        weights = torch.where(label[mask] > 0,
+                              torch.as_tensor(float(top_weight), dtype=margin.dtype, device=margin.device),
+                              torch.as_tensor(float(bottom_weight), dtype=margin.dtype, device=margin.device))
+        if sample_weight is not None:
+            weights = weights * torch.broadcast_to(sample_weight.to(score), score.shape)[mask]
+        loss = (per_item * weights).sum() / weights.sum().clamp_min(1e-12)
+    else:
+        loss = margin.sum() * 0.0
     return (loss, mask) if return_mask else loss
 
 
@@ -227,9 +246,29 @@ def _soft_rank(x: torch.Tensor, temperature: float = 0.1,
     return probs.sum(dim=-1)
 
 
+def extreme_return_mask(realized_return, mask=None, fraction=0.1):
+    """Select equal-size return tails per date, without using predicted scores."""
+    if not 0 < fraction <= 0.5:
+        raise ValueError('tail fraction must be in (0, 0.5]')
+    valid = torch.isfinite(realized_return)
+    if mask is not None:
+        valid = valid & mask.bool()
+    selected = torch.zeros_like(valid)
+    for row in range(len(realized_return)):
+        indices = valid[row].nonzero().flatten()
+        n = len(indices)
+        if n < 2:
+            continue
+        k = min(max(1, int(n * fraction)), n // 2)
+        order = indices[torch.argsort(realized_return[row, indices].detach(), stable=True)]
+        selected[row, order[:k]] = True
+        selected[row, order[-k:]] = True
+    return selected
+
+
 def rank_ic_loss(score: torch.Tensor, realized_return: torch.Tensor,
                  mask: torch.Tensor | None = None, temperature: float = 0.1,
-                 return_ic: bool = False):
+                 return_ic: bool = False, sample_weight: torch.Tensor | None = None):
     """Differentiable cross-sectional Spearman/RankIC objective.
 
     ``score`` and ``realized_return`` may be ``[N]`` or ``[B, N]``.  Each row
@@ -267,12 +306,17 @@ def rank_ic_loss(score: torch.Tensor, realized_return: torch.Tensor,
     sr = sr * valid.to(sr.dtype)
     rr = _soft_rank(safe_ret.detach(), temperature, valid).detach() * valid.to(sr.dtype)
     count = valid.sum(-1)
-    denom = count.clamp_min(1).to(score.dtype)
-    sr = sr - (sr.sum(-1, keepdim=True) / denom.unsqueeze(-1))
-    rr = rr - (rr.sum(-1, keepdim=True) / denom.unsqueeze(-1))
-    cov = (sr * rr * valid).sum(-1)
-    var_s = (sr.square() * valid).sum(-1)
-    var_r = (rr.square() * valid).sum(-1)
+    # Ranks still use the complete valid cross-section. Only the correlation
+    # moments are weighted, so low-weight names remain ranking competitors.
+    weights = valid.to(score.dtype)
+    if sample_weight is not None:
+        weights = weights * torch.broadcast_to(sample_weight.to(score), score.shape)
+    denom = weights.sum(-1).clamp_min(1e-12)
+    sr = sr - ((sr * weights).sum(-1, keepdim=True) / denom.unsqueeze(-1))
+    rr = rr - ((rr * weights).sum(-1, keepdim=True) / denom.unsqueeze(-1))
+    cov = (sr * rr * weights).sum(-1)
+    var_s = (sr.square() * weights).sum(-1)
+    var_r = (rr.square() * weights).sum(-1)
     ic = cov / (var_s.mul(var_r).clamp_min(1e-8).sqrt())
     row_ok = (count >= 3) & (var_s > 1e-8) & (var_r > 1e-8)
     ic_safe = torch.where(row_ok, ic, torch.zeros_like(ic))
@@ -528,3 +572,33 @@ def group_decorrelation_loss(z: torch.Tensor, group_size: int = 8,
     balance = (group_energy - group_energy.mean()).square().mean()
     variance = F.relu(0.05 - std).square().mean()
     return decor + balance_weight * balance + variance_weight * variance
+
+
+def output_decorrelation_loss(head_scores: torch.Tensor,
+                              mask: torch.Tensor | None = None) -> torch.Tensor:
+    """Optional ``|offdiag(Corr(s_1, ..., s_K))|_F^2`` objective.
+
+    For [B, N, K], compute a separate K-by-K correlation across N stocks
+    for each week, then average the off-diagonal squared Frobenius norms.
+    A mask excludes missing labels. Constant heads are stabilized by epsilon;
+    this penalty alone does not guarantee non-collapsing or profitable heads.
+    """
+    if head_scores.ndim < 2:
+        raise ValueError("head_scores must have shape [..., n_heads]")
+    x = head_scores
+    if x.shape[-2] < 2 or x.shape[-1] < 2:
+        return x.sum() * 0.0
+    valid = torch.isfinite(x).all(-1)
+    if mask is not None:
+        valid = valid & mask.bool()
+    count = valid.sum(-1)
+    safe = torch.where(valid.unsqueeze(-1), x, torch.zeros_like(x))
+    mean = safe.sum(-2, keepdim=True) / count.clamp_min(1)[..., None, None]
+    centered = (safe - mean) * valid.unsqueeze(-1)
+    cov = centered.transpose(-2, -1) @ centered / (count-1).clamp_min(1)[..., None, None]
+    std = cov.diagonal(dim1=-2, dim2=-1).clamp_min(1e-12).sqrt()
+    corr = cov / (std.unsqueeze(-1) * std.unsqueeze(-2)).clamp_min(1e-12)
+    offdiag = corr - torch.diag_embed(torch.diagonal(corr, dim1=-2, dim2=-1))
+    per_week = offdiag.square().sum(dim=(-2,-1))
+    usable = count >= 2
+    return torch.where(usable, per_week, torch.zeros_like(per_week)).sum() / usable.sum().clamp_min(1)
