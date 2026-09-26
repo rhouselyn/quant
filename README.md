@@ -1,24 +1,49 @@
 # quant MVP
 
-这是一个可运行的周频量化原型：合成/真实 A 股数据 → 技术特征 → Mamba2 风格时序编码器 → 时间 InfoNCE + 极端分位 score + 全量 RankIC loss → 样本外多空和 Top-20 多头回测与图表。
+这是一个可运行的周频量化原型：真实 A 股数据 → 技术特征 → Mamba2 风格时序编码器 → 时间 InfoNCE + 极端分位 score + 全量 RankIC + 行业暴露（η²）惩罚 → 样本外多空和 Top-20 多头回测与图表。
 
 ## 默认配置与快速运行
 
-当前默认启动配置是 `configs/hierarchical_580_h2.yaml`：**580股、29行业各20股、一个市场token、L→G→L→G→L分层注意力、单score头、10epochs**。时间编码器保持40周输入和128维embedding。Score头尾20%等权、全量RankIC权重0.5；未来两周InfoNCE权重0.1，仅作用于关系层前的时序表示与独立投影头。独立EMA包含时序编码器和投影头。固定对照同时包含关闭InfoNCE及未来五周权重0.1；全部完成后按验证Top20净Sharpe更新默认配置。
+当前部署配置是 `configs/hierarchical_580_h5_15ep_gatefrozen0_lambda1.yaml`：**580股、29行业各20股、一个市场token、L→G→L→G→L分层注意力、单score头、15epochs、五周temporal key、关系门冻结为恒等、行业暴露惩罚 λ=1.0**。时间编码器保持40周输入和128维embedding。总损失 = 1.0×极端分位score（头尾各20%，等权）+ 0.5×全量RankIC + 0.1×五周InfoNCE + 1.0×行业η²暴露惩罚。选模仍是验证集Top-20纯多头净Sharpe。
+
+`relation_gate_init: 0.0` 与 `freeze_relation_gates: true` 让关系层（59.7%参数）成为精确恒等映射；因此6项市场特征只能停在关系块里，**该配置不具备任何regime条件化能力**，任何"市场状态作为输入"的结论必须在门可训练的臂上重测。
 
 使用 `data/sw_580_observed_features/`，从原始日线及2016年前历史修复滚动特征；滚动窗口以实际观测周计数，日历空周仅向前携带过去特征。原始OHLCV及下一日历周收益标签不填造，旧580/600/500缓存保留。市场token另输入6项当时可见市场状态，按训练期统计标准化。架构说明见 [实现与实验记录](docs/hierarchy_implementation.md)。
 
 | 参数 | 默认值 |
 | --- | --- |
 | 周线观测 | 2016-09-30 ～ 2026-09-11，520个缓存周观测 |
-| Query / temporal key | 最近40周 / 初始未来2周单key；五周为对照 |
+| Query / temporal key | 最近40周 / 未来5周单key（两周为历史对照） |
 | 模型 | torch_mamba2 + LGLGL行业注意力 + 一个市场token，128维，单score头 |
 | Score loss | 收益前后各 20%，头部/尾部等权（1.0 / 1.0），中间忽略 |
 | RankIC loss | 全量横截面 RankIC |
-| 总损失 | 初始Score + 0.1×两周InfoNCE + 0.5×全量RankIC；关闭/五周对照 |
+| 关系门 | `relation_gate_init 0.0` + 冻结，LGLGL 为恒等 |
+| 行业暴露惩罚 | λ=1.0，惩罚分数方差中由行业均值解释的部分（η²） |
+| 总损失 | Score + 0.1×五周InfoNCE + 0.5×全量RankIC + 1.0×行业η² |
 | 选模 | 验证集 Top-20 纯多头净 Sharpe，平局保留较早轮次 |
 | 权重文件 | 仅 best.pt / newest.pt |
 | 关闭 | 随机窗口、多正样本、块间排序、去相关 |
+
+## 当前结果与已知边界
+
+测试集75周、Top-20等权、单边成本10bps，`metrics.json` 口径（净超额相对580等权基准，基准净Sharpe 0.581）：
+
+| 种子 | best epoch | 净超额 bps/周 | 净Sharpe | 换手 | 最大回撤 |
+| --- | --- | --- | --- | --- | --- |
+| 42 | 8 | 26.4 | 1.084 | 0.738 | −22.8% |
+| 43 | 6 | 23.2 | 1.019 | 0.540 | −29.3% |
+| 44 | 4 | 36.9 | 1.257 | 0.631 | −24.0% |
+| λ=0 冻结门（种子42） | 11 | 6.2 | 0.623 | 1.449 | −30.1% |
+| 未加惩罚基线（种子42） | 11 | 13.0 | 0.675 | 1.562 | −32.5% |
+
+三点必须同时读：
+
+1. **λ 本身没有被证明有效。** 三种子周度平均净超额31.9bps、对零 t=2.38，但配对周检验相对 λ=0 只有 +20.6bps（t=1.16）、相对基线 +16.9bps（t=0.74）。本项目测试净超额的单头标准误约16.6bps/周，即任何小于约33bps的差距在两头之间都不可分辨；λ=0 只跑了一个种子，这个比较要闭合必须把 λ=0 也在种子43/44上复现。
+2. **多头侧超额的大部分是流动性暴露，不是选股。** 头部有82.5%～93.1%的票落在当周成交额最小的一半（全市场按构造是50%，λ=0 冻结门为59.5%）。把每周头部按其自身成交额分位分布配一个同期可交易组合作基准，净超额从27.8/28.3/39.6跌到 **9.7/1.2/15.5bps（t=0.57/0.09/0.91）**。该流动性因子在本数据集单调且长期存在：五档等权前瞻收益 +41/+26/+14/−7/−29bps，train/valid/test 首尾差59/85/65bps，11个自然年里10年为正。复现见 `scripts/longonly_controls.py`、`scripts/longonly_capacity_targeting.py`（表中数值与 `metrics.json` 相差1～5bps，源于首周建仓与缺失收益的记账口径）。
+3. **有统计力量的那一腿做不了。** λ=1 种子42测试集头部+35.0bps vs 尾部−100.7bps，多空差135.7bps、t=4.45，且两腿流动性暴露同向、匹配基准后不变；空头t值达−4.1～−5.3。A股融券对这批小票基本不可得，所以多头约束砍掉的正是信号里可检验的部分。同时 η² 惩罚并未消除暴露而是搬家：按最薄一半占比排序 indhead 29.6% < 基线53.9% < λ=0 59.5% < λ=1 82.5～93.1%，与 η² 排序完全反向——压平行业那一格，暴露溢出到流动性那一格。
+
+已排除的方向（都跑过、都失败，别再提）：关系门 lr×20 / 冻结 / 行业内负样本对排序IC无差异；行业超额辅助头把 η² 推到15.9×空值并恶化IC；λ=0.3 验证好测试差；门可训练+λ=1 的 η² 低于空值但组合为负；周度粘性/换手惩罚与死区带（跨种子 +1.0bps、t=0.22）；极端分位标签集缩到20或50只；截面反向波动配权。零训练且可复现的正向结论只有一个：目标化波动率的现金择时（`scripts/longonly_capacity_targeting.py`），平均收益不变、年化波动22%→12～14%、三例回撤全部改善、净Sharpe 0.71→最高1.48，但其相对"同平均静态暴露"的择时增量只有+8～16bps、t≤1.49，未获认证。
+
 
 ```powershell
 python scripts/run_hierarchy_comparison.py
@@ -32,7 +57,7 @@ python scripts/run_hierarchy_comparison.py
 python scripts/import_citic_industries.py --mapping path/to/citic.csv --source "数据提供方" --asof YYYY-MM-DD
 ```
 
-输入 `code,citic_l1` 或 Tushare `ts_code,l1_name`，要求800股全部唯一覆盖并符合中信30行业名称。分类是元数据，不执行行业中性化。
+输入 `code,citic_l1` 或 Tushare `ts_code,l1_name`，要求800股全部唯一覆盖并符合中信30行业名称。分类是元数据，该800股配置不执行行业中性化；580股配置则已把申万一级行业用于损失项（η²暴露惩罚），并且行业快照是2026年回溯、带后验信息。
 
 旧数据和小范围测试入口全部保留：
 
@@ -48,7 +73,7 @@ python scripts/run_mvp.py --smoke-test --synthetic --output outputs/smoke
 
 单头风格分析：运行 `python scripts/analyze_single_score_style.py`，结果在 `outputs/single_score_500_style_analysis/`，网页入口为 `/style-analysis`。复用基线epoch8预测，比较7个历史行情因子的50%/100%中性化，以及行业快照回溯对照。原始Top20测试净收益36.51%、Sharpe1.167；行情完全中性化后35.67%、1.122，回撤从20.44%扩大至25.74%。验证期也支持保留原始分数，因此默认不启用中性化。该检验不覆盖市值、估值等历史基本面，行业快照有后验信息；不是完整风险中性策略。
 
-默认分层训练使用 `data/sw_580_observed_features/weekly.parquet` 与同目录市场特征；构建脚本 `python scripts/prepare_hierarchy_580.py`（已完成，不重复覆盖）。原580股数据保留在 `data/sw_580_29x20/`。行业仍是2026年快照回溯；注意力候选mask来自当前行情与历史覆盖，未来标签mask仅用于训练监督。`--synthetic` 可切换可复现合成数据并使用独立缓存；其他配置仍支持 Baostock（免费前复权日线）。不能把合成回测结果当作真实交易结论。
+默认分层训练使用 `data/sw_580_observed_features/weekly.parquet` 与同目录市场特征；构建脚本 `python scripts/prepare_hierarchy_580.py`（已完成，不重复覆盖）。`data/` 与 `outputs/` 整体不进版本库（缓存parquet共773MB，另有厂商许可的行业分类 `.xls`），clone 后必须先执行 prepare 脚本才能训练；本文所有测试集数值都由 `outputs/` 下对应 run 目录的 `metrics.json` 与 `predictions.parquet` 复现。原580股数据保留在 `data/sw_580_29x20/`。行业仍是2026年快照回溯；注意力候选mask来自当前行情与历史覆盖，未来标签mask仅用于训练监督。`--synthetic` 可切换可复现合成数据并使用独立缓存；其他配置仍支持 Baostock（免费前复权日线）。不能把合成回测结果当作真实交易结论。
 
 真实数据（Baostock，免费前复权日线）运行：
 
