@@ -1,0 +1,11 @@
+{
+  "independent_283_week_accounting": true,
+  "corrected_calendar_weeks": 295,
+  "original_calendar_weeks": 283,
+  "restored_holiday_adjacent_weeks": 12,
+  "signal_recomputation": true,
+  "daily_price_rows_matched": 38520,
+  "comparable_full_calendar_main_rows": 54,
+  "missing_stress_rows": 12,
+  "complete_calendar_weekly_rows": 15930
+}

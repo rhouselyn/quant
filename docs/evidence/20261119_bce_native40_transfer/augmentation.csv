@@ -1,0 +1,4 @@
+family,train_weeks,val_loss_weeks,active_weeks,effective_aug_weeks,variants
+old,473,123,236,236,708
+B0,473,123,236,236,708
+P6,473,123,236,236,708

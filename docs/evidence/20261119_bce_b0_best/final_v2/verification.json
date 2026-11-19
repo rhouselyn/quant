@@ -1,0 +1,21 @@
+{
+  "status": "complete",
+  "heads_trained": 30,
+  "training_rows": 3000,
+  "train_weeks": 473,
+  "validation_weeks": 123,
+  "test_weeks": 295,
+  "signals": 16,
+  "metric_rows": 64,
+  "weekly_rows": 18880,
+  "reference_weekly_rows_reproduced": 4720,
+  "seed44_best_e3_exact": true,
+  "new_gpu_work": false,
+  "report_complete": true,
+  "independent_metric_rows": 64,
+  "paired_comparisons": 108,
+  "full_forward_checks": 36,
+  "input_hashes_verified": 106,
+  "validation_checkpoints_verified": 30,
+  "seed44_exact": true
+}

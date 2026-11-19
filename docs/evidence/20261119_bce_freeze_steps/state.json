@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "heads_trained": 54,
+  "training_rows": 5400,
+  "real_encoders": 9,
+  "train_weeks": 473,
+  "validation_weeks": 123,
+  "test_weeks": 295,
+  "metric_rows": 72,
+  "weekly_rows": 21240,
+  "validation_freeze_choices": 6,
+  "prefix_groups_exact": 18,
+  "f10_heads_reproduced": 18,
+  "f10_weekly_rows_reproduced": 7080,
+  "new_gpu_export": false,
+  "report_complete": true,
+  "independent_metric_rows": 72,
+  "main_paired_comparisons": 132,
+  "selected_paired_comparisons": 24,
+  "input_hashes_verified": 210,
+  "selected_validation_verified": 54,
+  "mean_logit_verified": true
+}

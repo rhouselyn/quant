@@ -1,0 +1,58 @@
+B0_three_plain real encoder/head seed 42 selected 5 val 0.6940169930458069
+B0_three_fixed5 real encoder/head seed 42 selected 5 val 0.6939458847045898
+B0_three_plain real encoder/head seed 43 selected 4 val 0.6923289895057678
+B0_three_fixed5 real encoder/head seed 43 selected 4 val 0.6921688914299011
+B0_three_plain real encoder/head seed 44 selected 6 val 0.6930394768714905
+B0_three_fixed5 real encoder/head seed 44 selected 6 val 0.6929361820220947
+P6_three_plain real encoder/head seed 42 selected 37 val 0.6893096566200256
+P6_three_fixed5 real encoder/head seed 42 selected 37 val 0.6892991065979004
+P6_three_plain real encoder/head seed 43 selected 6 val 0.6983862519264221
+P6_three_fixed5 real encoder/head seed 43 selected 6 val 0.6983720064163208
+P6_three_plain real encoder/head seed 44 selected 3 val 0.6882727742195129
+P6_three_fixed5 real encoder/head seed 44 selected 3 val 0.6882703304290771
+All 12 real-encoder heads locked before test inference
+book             arm  fee  annual_calendar  max_drawdown    sharpe
+ old  B0_three_plain   10         0.248732      0.359178  0.925714
+ old  B0_three_plain   30         0.095471      0.521846  0.465087
+ old B0_three_fixed5   10         0.256461      0.359178  0.950126
+ old B0_three_fixed5   30         0.104372      0.504331  0.494350
+ old  P6_three_plain   10         0.090826      0.411488  0.451473
+ old  P6_three_plain   30        -0.031890      0.476971  0.030972
+ old P6_three_fixed5   10         0.090826      0.411488  0.451473
+ old P6_three_fixed5   30        -0.031890      0.476971  0.030972
+ old       old_plain   10         0.500090      0.279030  1.574941
+ old       old_plain   30         0.309099      0.287279  1.094235
+ old    B0_one_plain   10         0.258047      0.293744  0.938878
+ old    B0_one_plain   30         0.100976      0.448307  0.478630
+ old    P6_one_plain   10         0.212600      0.328028  0.809921
+ old    P6_one_plain   30         0.059845      0.410942  0.347597
+ old      old_fixed5   10         0.514118      0.279030  1.613233
+ old      old_fixed5   30         0.319731      0.287279  1.125808
+ old   B0_one_fixed5   10         0.341886      0.293744  1.157794
+ old   B0_one_fixed5   30         0.175162      0.448307  0.700033
+ old   P6_one_fixed5   10         0.162278      0.316642  0.656598
+ old   P6_one_fixed5   30         0.006126      0.510357  0.172848
+  B0  B0_three_plain   10         0.237153      0.365300  0.904913
+  B0  B0_three_plain   30         0.093449      0.571454  0.461445
+  B0 B0_three_fixed5   10         0.228004      0.384745  0.878269
+  B0 B0_three_fixed5   30         0.087511      0.584707  0.441933
+  B0       old_plain   10         0.406493      0.264872  1.381624
+  B0       old_plain   30         0.238544      0.299491  0.917043
+  B0    B0_one_plain   10         0.207147      0.409933  0.801116
+  B0    B0_one_plain   30         0.066376      0.539234  0.369044
+  B0      old_fixed5   10         0.423292      0.264872  1.429605
+  B0      old_fixed5   30         0.251378      0.299491  0.957057
+  B0   B0_one_fixed5   10         0.278022      0.409933  0.987488
+  B0   B0_one_fixed5   30         0.129603      0.539234  0.563301
+  P6  P6_three_plain   10         0.041143      0.418574  0.287251
+  P6  P6_three_plain   30        -0.116753      0.571688 -0.244956
+  P6 P6_three_fixed5   10         0.041143      0.418574  0.287251
+  P6 P6_three_fixed5   30        -0.116753      0.571688 -0.244956
+  P6       old_plain   10         0.506877      0.253586  1.516874
+  P6       old_plain   30         0.264895      0.412919  0.933554
+  P6    P6_one_plain   10         0.213330      0.323619  0.771405
+  P6    P6_one_plain   30         0.021583      0.377308  0.228137
+  P6      old_fixed5   10         0.530141      0.253586  1.564086
+  P6      old_fixed5   30         0.283731      0.419269  0.980589
+  P6   P6_one_fixed5   10         0.126446      0.347422  0.533486
+  P6   P6_one_fixed5   30        -0.056834      0.516978 -0.018255

@@ -1,0 +1,18 @@
+{
+  "status": "complete",
+  "heads_trained": 18,
+  "train_weeks": 473,
+  "validation_loss_weeks": 123,
+  "test_weeks": 295,
+  "missing_returns_marked_flat_by_explicit_user_instruction": true,
+  "no_training_weeks_dropped": true,
+  "original_plain_signal_reproduced": true,
+  "archived_weekly_rows_reproduced": 2360,
+  "metric_rows": 56,
+  "weekly_rows": 16520,
+  "reference_metric_rows": 12,
+  "report_complete": true,
+  "paired_comparisons": 60,
+  "training_trace_rows": 1800,
+  "max_gpu_allocated_mib": 49.90966796875
+}

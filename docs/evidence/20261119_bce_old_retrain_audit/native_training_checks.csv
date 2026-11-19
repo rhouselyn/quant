@@ -1,0 +1,13 @@
+arm,seed,initial_loss_error,first_val_error,selected_val_error,batch_fingerprints_match
+B0_plain,42,0.0,0.0,0.0,True
+B0_plain,43,0.0,0.0,0.0,True
+B0_plain,44,0.0,0.0,0.0,True
+B0_fixed5,42,0.0,0.0,0.0,True
+B0_fixed5,43,0.0,5.960464477539063e-08,0.0,True
+B0_fixed5,44,0.0,-5.960464477539063e-08,0.0,True
+P6_plain,42,0.0,0.0,0.0,True
+P6_plain,43,0.0,0.0,0.0,True
+P6_plain,44,0.0,0.0,0.0,True
+P6_fixed5,42,0.0,0.0,0.0,True
+P6_fixed5,43,0.0,0.0,0.0,True
+P6_fixed5,44,0.0,0.0,0.0,True

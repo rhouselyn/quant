@@ -1,0 +1,12 @@
+{
+  "feature_mean_identical": true,
+  "feature_std_identical": true,
+  "feature_order_identical": true,
+  "normalization": "legacy_z",
+  "normalized_inputs_identical": true,
+  "p6_checkpoint_parameters_identical": true,
+  "all_600_training_loss_rows_identical": true,
+  "all_283_logits_identical": true,
+  "all_6792_weekly_net_returns_identical": true,
+  "all_metrics_equal_at_absolute_tolerance": 1e-12
+}

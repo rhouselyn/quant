@@ -1,0 +1,116 @@
+[
+  {
+    "source": "outputs\\bce_equiv_init_v1\\run.py",
+    "copy": "run.py",
+    "bytes": 16989,
+    "sha256": "6b81cfbfd7bce6892f9f15a9b24ccccecb11a3a2c1fd316904330cb79755419b"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\training_source.py",
+    "copy": "training_source.py",
+    "bytes": 16154,
+    "sha256": "4a0e99f672c1ae4c4323a1d6a432e0dd7a2504128cea2083b5942769581a9eda"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 17579,
+    "sha256": "fa268c632b1c2f281fbf72a8aacd3c858a68099cc040a377b18c575526087c3b"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\run.log",
+    "copy": "run.log",
+    "bytes": 6637,
+    "sha256": "cf5fd42214f742b48479ecd670c3f805eea04aec6426841a9be35a73dfa0225a"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\replay.log",
+    "copy": "replay.log",
+    "bytes": 2515,
+    "sha256": "7040629e6df94b110093181fb2b7258893d68a796bfc42f9201a7db4a0c46ee8"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 9844,
+    "sha256": "fb66b142b0f140ff79cd2b97274c5adbbcad2bd5a2562609a4c737ca206059d5"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 67428,
+    "sha256": "9e1a567f3663fd1b9a74ed7b8736a25661a26fa8cb896586b67bfc8c047d1f0f"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 19589,
+    "sha256": "0f199b432d2165db34fac0492ca13dadadd68052f6f18a128101fe7326e30133"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 2084,
+    "sha256": "32001ed4eacb2ee254b595a1aee59ded036209a950710e6635c4262a3ee34e07"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\initial_equivalence.csv",
+    "copy": "initial_equivalence.csv",
+    "bytes": 717,
+    "sha256": "a1e929c81bab3c7da0119d8da4cad8d97188f1945704d68d00aa19036a84e0ef"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\divergence.csv",
+    "copy": "divergence.csv",
+    "bytes": 45776,
+    "sha256": "387f44520fcd13fc25ab8007b2daf931fde5ba53353a053fb28db4b8c483d8f1"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 45129,
+    "sha256": "03459d333d80385ef5ad26892a699ed5b5ca4171623cef127bd1760985f36f27"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 4784,
+    "sha256": "169ddee36ac3e90a7303f8a3cdfba36193481ae2c5c0143e5e0cf6f3aca1c1af"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 101,
+    "sha256": "585c55d2ba06f4fbc7eaea4bca9444e746867990d4096ae3f6f91b2baf01e09f"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\changed_weeks.csv",
+    "copy": "changed_weeks.csv",
+    "bytes": 614,
+    "sha256": "8189371eb510bef385a89a9e59f5f91624fb9e977f439ceb5d74edc846c5dbc6"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\recovery.csv",
+    "copy": "recovery.csv",
+    "bytes": 518,
+    "sha256": "0313d8c80a202589b5bbd525d11a67df48cb55f03c81226a21793b2565431c5b"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 5800,
+    "sha256": "87705218db0943741c99d29263864f8d28df75ad0f2ced344d93fefcf832f5bf"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 536,
+    "sha256": "c436e444801a0ae406719e0bc3c3ec3f0a3685d33fee890629dacc96b6ba16b2"
+  },
+  {
+    "source": "outputs\\bce_equiv_init_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 536,
+    "sha256": "c436e444801a0ae406719e0bc3c3ec3f0a3685d33fee890629dacc96b6ba16b2"
+  }
+]

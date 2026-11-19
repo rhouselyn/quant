@@ -1,0 +1,107 @@
+old_plain 42 selected 100 val_bce 0.6921721696853638
+equiv_plain 42 selected 100 val_bce 0.6920015215873718
+old_fixed5 42 selected 100 val_bce 0.6925008893013
+equiv_fixed5 42 selected 100 val_bce 0.6923799514770508
+old_plain 43 selected 16 val_bce 0.6916748881340027
+equiv_plain 43 selected 16 val_bce 0.691256046295166
+old_fixed5 43 selected 16 val_bce 0.6917638182640076
+equiv_fixed5 43 selected 16 val_bce 0.6914100050926208
+old_plain 44 selected 100 val_bce 0.6861891746520996
+equiv_plain 44 selected 100 val_bce 0.6859320402145386
+old_fixed5 44 selected 100 val_bce 0.6865342855453491
+equiv_fixed5 44 selected 100 val_bce 0.6862964034080505
+Locked all 12 validation checkpoints before test inference
+Traceback (most recent call last):
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\common.py", line 25, in result_type_many
+    return np.result_type(*arrays_and_dtypes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: data type 'old' not understood
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\14815\Projects\quant\outputs\bce_equiv_init_v1\run.py", line 261, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "C:\Users\14815\Projects\quant\outputs\bce_equiv_init_v1\run.py", line 236, in main
+    x=weekly.query("arm==@a+'_'+@suffix and long_slots==20")
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4599, in query
+    res = self.eval(expr, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\frame.py", line 4725, in eval
+    return _eval(expr, inplace=inplace, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\eval.py", line 336, in eval
+    parsed_expr = Expr(expr, engine=engine, parser=parser, env=env)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 808, in __init__
+    self.terms = self.parse()
+                 ^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 827, in parse
+    return self._visitor.visit(self.expr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 411, in visit
+    return visitor(node, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 417, in visit_Module
+    return self.visit(expr, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 411, in visit
+    return visitor(node, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 420, in visit_Expr
+    return self.visit(node.value, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 411, in visit
+    return visitor(node, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 745, in visit_BoolOp
+    return reduce(visitor, operands)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 738, in visitor
+    lhs = self._try_visit_binop(x)
+          ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 734, in _try_visit_binop
+    return self.visit(bop)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 411, in visit
+    return visitor(node, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 718, in visit_Compare
+    return self.visit(binop)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 411, in visit
+    return visitor(node, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 533, in visit_BinOp
+    return self._maybe_evaluate_binop(op, op_class, left, right)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 527, in _maybe_evaluate_binop
+    return self._maybe_eval(res, eval_in_python + maybe_eval_in_python)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\expr.py", line 487, in _maybe_eval
+    return binop.evaluate(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\ops.py", line 442, in evaluate
+    right = self.rhs.evaluate(
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\ops.py", line 434, in evaluate
+    left = self.lhs.evaluate(
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\ops.py", line 456, in evaluate
+    res = eval(self, local_dict=env, engine=engine, parser=parser)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\eval.py", line 357, in eval
+    ret = eng_inst.evaluate()
+          ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\engines.py", line 78, in evaluate
+    self.result_type, self.aligned_axes = align_terms(self.expr.terms)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\align.py", line 161, in align_terms
+    return result_type_many(*(term.value for term in terms)).type, None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\site-packages\pandas\core\computation\common.py", line 43, in result_type_many
+    np_dtype = np.result_type(*non_ea_dtypes)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: data type 'old' not understood

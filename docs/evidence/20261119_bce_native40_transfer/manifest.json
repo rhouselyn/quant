@@ -1,0 +1,188 @@
+[
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\prepare.py",
+    "copy": "prepare.py",
+    "bytes": 10950,
+    "sha256": "edebf0beb809785fc099b3a8c5dfb26de5645d51070aa9284f9dd2e0cf0aec38"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\prepare_before_io_retry.py",
+    "copy": "prepare_before_io_retry.py",
+    "bytes": 9957,
+    "sha256": "bb32b8fae99a19956aaf1e2d9c5335d9f208c1704d0fb943fe3403e3e34970dc"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\train_replay.py",
+    "copy": "train_replay.py",
+    "bytes": 15211,
+    "sha256": "3122dcc158badef1899e69b311abfd3fe091e1f7a8c8cf50b62212a98f426bb9"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 22427,
+    "sha256": "3465203d3e4735820c75effb844edd216a509dd41e94120f4e2507a1586ceb5e"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\check_forward.py",
+    "copy": "check_forward.py",
+    "bytes": 3086,
+    "sha256": "323319b83831af8af282c2ef58b49bd75b9026b93f0a4f284c560ef84d6be38d"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\prepare_attempt1.log",
+    "copy": "prepare_attempt1.log",
+    "bytes": 708,
+    "sha256": "d896558f8b6483eaa734259432d98940e9561568d0f9a77ac5bc29b6d9143749"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\prepare_attempt2.log",
+    "copy": "prepare_attempt2.log",
+    "bytes": 7314,
+    "sha256": "3f239c4a8b373c43af6b4154bad3f71d1bb0e5a4110b18c28205cb88287c9bca"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\prepare.log",
+    "copy": "prepare.log",
+    "bytes": 3108,
+    "sha256": "49f0e137d5edcba089257fb2d0d077c0e1e62934c79d970b10f8a8e1d6387133"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\train.log",
+    "copy": "train.log",
+    "bytes": 2940,
+    "sha256": "09df3bdd2dd5aa1f2a805b49ede92034145132409d744af526df0607392b2074"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\dates.json",
+    "copy": "dates.json",
+    "bytes": 17183,
+    "sha256": "e519757c4b7439580839f35a39699f18ab23ee98e85abb0fe79d85b00a6e572a"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\coverage.csv",
+    "copy": "coverage.csv",
+    "bytes": 57556,
+    "sha256": "92a3dbfb07c4cd0b0242a0ef76368a1d4daeb205cd5a5dc49e5ae30e11104c9a"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\resource.csv",
+    "copy": "resource.csv",
+    "bytes": 1507,
+    "sha256": "e495e3b3e07f5065c8f3c555274710386fff75fcb2cb62ce2eab8416b134739c"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\augmentation.csv",
+    "copy": "augmentation.csv",
+    "bytes": 150,
+    "sha256": "52bce31e6333be2d5610ede1b3b5cda919443ec5046437601f338ace932335b3"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\missing_returns.csv",
+    "copy": "missing_returns.csv",
+    "bytes": 21121,
+    "sha256": "315f6db2ef42d34e85dd06625c5e2b57cfa2d5ca181bc25fafe92cf9a28fbeed"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\missing_summary.csv",
+    "copy": "missing_summary.csv",
+    "bytes": 347,
+    "sha256": "9027f8a3bed0cb488af1a360215a7bdcec570793d39a57a290445ccdc76fdf87"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\label_summary.csv",
+    "copy": "label_summary.csv",
+    "bytes": 182,
+    "sha256": "434de03ffcd555cda844f21cba3c1c17757db9c048c44ec9ce9956c7c0e40eb2"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\signal_baskets.csv",
+    "copy": "signal_baskets.csv",
+    "bytes": 1410306,
+    "sha256": "bf12c3f295f169b0cb5d922de9a715c04126cb9b407f35ae7a1d646229bce673"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 5059,
+    "sha256": "24a430db24819014a4f4d6cee587d204981d39faaace5e8d9d273302a0a17af0"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 98146,
+    "sha256": "9c7e58a2b51d0136ebd04f0113ecfe1c2a720b5b93bc0e4188fd7ff5169c5e7b"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 34387,
+    "sha256": "6128fade579ad2e7945d2488d98df88657ca3bedbc3083c773d65c65aeaa3955"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 23736,
+    "sha256": "724f6040d11bc270ae368b47a91901d11494c4a1449b2aac19e28553f9f9b255"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 11413,
+    "sha256": "93c168c3c7d0b272680e495d3705c6b35374fccb34ac804ac7bfa447e0a118bb"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\reference_metrics.csv",
+    "copy": "reference_metrics.csv",
+    "bytes": 2610,
+    "sha256": "b2caa43c131f6583eec3422ebe707b7b04b68d9a32f2cb9a6c5f8be8546c6047"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 8848,
+    "sha256": "3794ae0597c94e41c5e2a536ec8862c53b673ba30cfe76ab00ce8c2cf35684b3"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\attribution.csv",
+    "copy": "attribution.csv",
+    "bytes": 2431,
+    "sha256": "40ac34a2c84077ab58b11a9c4b3e2fdf50d202b58ae1a19715c6ce081971cd46"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\forward_checks.csv",
+    "copy": "forward_checks.csv",
+    "bytes": 455,
+    "sha256": "a1337eaf7232743a122772ef25b3b32dd2994d03b350281f39c73e0c12b009a2"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\yearly.csv",
+    "copy": "yearly.csv",
+    "bytes": 42590,
+    "sha256": "e3fb0c8053b4e9d6eefc7d5484a8481143dd2a974852f385a12b955de078fcbd"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 137,
+    "sha256": "52e4af4a728db88c97ce10d7647e2e3935fe413c693b8645d643bec41760cf7a"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 20291,
+    "sha256": "11fe9df5456b8662e683eeb36e5e30bde7e0b776fcc648742534e09cb588e121"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 538,
+    "sha256": "bf476f1f53028d2563d62920b375d2532c96a75aa3b9e4faf92d323703e9a450"
+  },
+  {
+    "source": "outputs\\bce_native40_transfer_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 538,
+    "sha256": "bf476f1f53028d2563d62920b375d2532c96a75aa3b9e4faf92d323703e9a450"
+  }
+]

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "C:\Users\14815\Projects\quant\outputs\bce_native40_transfer_v1\prepare.py", line 168, in <module>
+    try:main()
+        ^^^^^^
+  File "C:\Users\14815\Projects\quant\outputs\bce_native40_transfer_v1\prepare.py", line 80, in main
+    cfg=yaml.safe_load((run/'config.yaml').read_text());lock=json.loads(Path(member['lock']).read_text())
+                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\14815\anaconda3\Lib\pathlib.py", line 1059, in read_text
+    return f.read()
+           ^^^^^^^^
+UnicodeDecodeError: 'gbk' codec can't decode byte 0x93 in position 1578: illegal multibyte sequence

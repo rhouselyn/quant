@@ -1,0 +1,290 @@
+[
+  {
+    "arm": "old_triple_plain",
+    "seed": 42,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "bf9e627201863bef609d5bf157f16506cb76859bacbc4e07aecbc570ebfb322f"
+  },
+  {
+    "arm": "old_triple_fixed5",
+    "seed": 42,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "9f97aeb00ed85a02fd0c2ceabac16477e7457271be44babc9309ece2d5bb16a7"
+  },
+  {
+    "arm": "old_triple_plain",
+    "seed": 43,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "44a738bf2d41d24df2539e0f00aeebf02d5a426e540b510814f932a714e49926"
+  },
+  {
+    "arm": "old_triple_fixed5",
+    "seed": 43,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "850609f1eb99c87ffa3fcf53d0a25b6630a9a54caad91eef240a6adff8f23253"
+  },
+  {
+    "arm": "old_triple_plain",
+    "seed": 44,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "39650e0bd889e0b62aa24e943740b333fd564b119e38018f59898174923cb664"
+  },
+  {
+    "arm": "old_triple_fixed5",
+    "seed": 44,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "543aa7d52a426e3238824e7a490c357302cf1b660c5967f583a4326826be3250"
+  },
+  {
+    "arm": "old_single_plain",
+    "seed": 42,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "bf9e627201863bef609d5bf157f16506cb76859bacbc4e07aecbc570ebfb322f"
+  },
+  {
+    "arm": "old_single_fixed5",
+    "seed": 42,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "9f97aeb00ed85a02fd0c2ceabac16477e7457271be44babc9309ece2d5bb16a7"
+  },
+  {
+    "arm": "old_single_plain",
+    "seed": 43,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "bf9e627201863bef609d5bf157f16506cb76859bacbc4e07aecbc570ebfb322f"
+  },
+  {
+    "arm": "old_single_fixed5",
+    "seed": 43,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "9f97aeb00ed85a02fd0c2ceabac16477e7457271be44babc9309ece2d5bb16a7"
+  },
+  {
+    "arm": "old_single_plain",
+    "seed": 44,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "bf9e627201863bef609d5bf157f16506cb76859bacbc4e07aecbc570ebfb322f"
+  },
+  {
+    "arm": "old_single_fixed5",
+    "seed": 44,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "9f97aeb00ed85a02fd0c2ceabac16477e7457271be44babc9309ece2d5bb16a7"
+  },
+  {
+    "arm": "p6_plain",
+    "seed": 42,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "db3837ccca25030213b1a5220f2de243b60985f7d5e0d91cf4fc16aecdb63e9d"
+  },
+  {
+    "arm": "p6_fixed5",
+    "seed": 42,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "a8bb779aaad4d18333248bf2d0f1196240e8f47c6287ca7428e7e3ffb238a66c"
+  },
+  {
+    "arm": "p6_plain",
+    "seed": 43,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "db3837ccca25030213b1a5220f2de243b60985f7d5e0d91cf4fc16aecdb63e9d"
+  },
+  {
+    "arm": "p6_fixed5",
+    "seed": 43,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "a8bb779aaad4d18333248bf2d0f1196240e8f47c6287ca7428e7e3ffb238a66c"
+  },
+  {
+    "arm": "p6_plain",
+    "seed": 44,
+    "supervision_sha256": "72a788cfc2e7f74b9a477a4a547cf676d7190a5b6db7dbf1f417fe532803a746",
+    "shape": [
+      473,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "db3837ccca25030213b1a5220f2de243b60985f7d5e0d91cf4fc16aecdb63e9d"
+  },
+  {
+    "arm": "p6_fixed5",
+    "seed": 44,
+    "supervision_sha256": "f19df56ed57730aa986426092f0d09f5fa193ef3ea6b084dbc994a6cd8d19de0",
+    "shape": [
+      1107,
+      50,
+      129
+    ],
+    "validation_shape": [
+      123,
+      50,
+      129
+    ],
+    "input_sha256": "a8bb779aaad4d18333248bf2d0f1196240e8f47c6287ca7428e7e3ffb238a66c"
+  }
+]

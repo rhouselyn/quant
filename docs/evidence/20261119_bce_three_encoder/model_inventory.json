@@ -1,0 +1,133 @@
+{
+  "models": [
+    {
+      "family": "B0",
+      "encoder_seed": 42,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "27837bda3ae70cfee18e0aefb60d125d0b49d6f695f3445872ea5238d951f49f",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [],
+      "config_sha256": "bd57708c8ae8d950f290be47ff1129483fba910434ae6153d4aac588f81c71a0",
+      "checkpoint_sha256": "844f7d500c6dc8f08acbdc64006e615b4b7447d8feacf4cb40752491ed36596b",
+      "committed_state": false
+    },
+    {
+      "family": "B0",
+      "encoder_seed": 43,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "a0bf2b873f27bff81decbec4ee1913a2d5cf0579a62fe938683f68d8e7dfb5d5",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "107e13b811e35188d617a65122ea34dc03ac0d5b2bd277f6cdf8c4a3e3ff44d5",
+      "checkpoint_sha256": "8e473f8b9f34bc2550afd928b1f4aa8e3cde978716b60fb0983c3f7a8b341b2e",
+      "committed_state": true
+    },
+    {
+      "family": "B0",
+      "encoder_seed": 44,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "1e621ed4555c110438d530261dbfc575e7afc6017c2197b2c478febc8b9289df",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "6a1dc30772cad337f0ff80f9ce7a7e21030c0f16c00d947fda0c3fa2ff7f2eee",
+      "checkpoint_sha256": "5389fca2e1ae6d2a446fb969d3b7f5436b21aa5d3c83f2b9d3272efe646e6284",
+      "committed_state": true
+    },
+    {
+      "family": "P6",
+      "encoder_seed": 42,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1",
+      "vector_epoch": 8,
+      "encoder_sha256": "ddc068a46761b3b9b0f016f2a8457faf9216d1bea71aa5edf8e8275fcc6e4a77",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [],
+      "config_sha256": "a2df161c340644aa845012e7263aca7b6bb098f3343640ca20436113aa10e295",
+      "checkpoint_sha256": "585753df11ef6bcb09e33f5f369ef357deb5d13a6223a0f4ef0bee327abb507d",
+      "committed_state": true
+    },
+    {
+      "family": "P6",
+      "encoder_seed": 43,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1",
+      "vector_epoch": 8,
+      "encoder_sha256": "9862182a5f6e4ffc0cb63f1b553b24fbf9b3ad778c2ca42ff1a53d9feb050c50",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "dc92909601f4f25959be5511b3c232e1dc584df852148eb0171cc7bde4b06fb1",
+      "checkpoint_sha256": "ddc8e0aad3cc3491eaa14eb93653a75adff084d9b817d4cddcdc87603511911f",
+      "committed_state": true
+    },
+    {
+      "family": "P6",
+      "encoder_seed": 44,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1",
+      "vector_epoch": 8,
+      "encoder_sha256": "d7c843ed0b5945f45ede5c13f5171034107512bea04f52409fb87ac34fec2f72",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "34e3bc6e8afdcc345515de99f6638d62d293946c8b8dd40b10a472887a6b4d10",
+      "checkpoint_sha256": "e2cdae74ce9188e03fef2ed62ccea63dd893a5dd18f18f4b0b93e50747f896c3",
+      "committed_state": true
+    }
+  ],
+  "input_hashes": {
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1\\config.yaml": "bd57708c8ae8d950f290be47ff1129483fba910434ae6153d4aac588f81c71a0",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1\\preprocessing.json": "3c2a1e8d598eaff924ad3398a4cce63966b8a14ca580592e76e47715c259203e",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1\\training_protocol.json": "816ccf043d14429ae624673352cb98850d0717ace8ac175e2ca16245cf739c33",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1\\train_verification.json": "6c4c55ffb938cd9822a3c6ba56cbc9199cba2032ff944608f960317e515b2cb5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1\\epoch_3.pt": "844f7d500c6dc8f08acbdc64006e615b4b7447d8feacf4cb40752491ed36596b",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\config.yaml": "107e13b811e35188d617a65122ea34dc03ac0d5b2bd277f6cdf8c4a3e3ff44d5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\preprocessing.json": "3c2a1e8d598eaff924ad3398a4cce63966b8a14ca580592e76e47715c259203e",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\training_protocol.json": "9a4e2e387efaba6b6cde9fb77bf9b525a9586b3db0acdf4217963c37aab49167",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\train_verification.json": "6c4c55ffb938cd9822a3c6ba56cbc9199cba2032ff944608f960317e515b2cb5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\epoch_3.pt": "8e473f8b9f34bc2550afd928b1f4aa8e3cde978716b60fb0983c3f7a8b341b2e",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1\\training_state.pt": "103b3fc834007c6d6a1c08cd5cb44aa89322b9226f2a4c96d95b003333cfbee2",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\config.yaml": "6a1dc30772cad337f0ff80f9ce7a7e21030c0f16c00d947fda0c3fa2ff7f2eee",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\preprocessing.json": "3c2a1e8d598eaff924ad3398a4cce63966b8a14ca580592e76e47715c259203e",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\training_protocol.json": "f9a54804a609a5eb98dfdfce7bb03b3d948288bc0cce8e89763fc092929669c5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\train_verification.json": "6c4c55ffb938cd9822a3c6ba56cbc9199cba2032ff944608f960317e515b2cb5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\epoch_3.pt": "5389fca2e1ae6d2a446fb969d3b7f5436b21aa5d3c83f2b9d3272efe646e6284",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1\\training_state.pt": "2a09c7ef0324d5708d700c1c6dee75570af24bd3a7a72d7cdd7bd9cf69804342",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\config.yaml": "a2df161c340644aa845012e7263aca7b6bb098f3343640ca20436113aa10e295",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\preprocessing.json": "2fe766b7f0a9b0bb115954955837f8b1f7a5c0fbc7ccce1a4b95f90d5a921b94",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\training_protocol.json": "1a6ff23628e1d6deb2d70ecf032211beb67ca2c29ebd025a579e67df6becaa48",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\train_verification.json": "3ecb1e88acd17a0d07aab8a20570d15f539f9f14edc80ce7dc465ec87ae48892",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\epoch_8.pt": "585753df11ef6bcb09e33f5f369ef357deb5d13a6223a0f4ef0bee327abb507d",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\group_fox_v1\\runs\\research_P6_F0_s42_a1\\training_state.pt": "13fed5668b6d3e973e5c2111513a2089f615465e51ad2ab206a9a457e89bd543",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\config.yaml": "dc92909601f4f25959be5511b3c232e1dc584df852148eb0171cc7bde4b06fb1",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\preprocessing.json": "2fe766b7f0a9b0bb115954955837f8b1f7a5c0fbc7ccce1a4b95f90d5a921b94",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\training_protocol.json": "4a79dfce920b5c57b9fdc0226453dc11771afd03ed25ed47c015a00362b01149",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\train_verification.json": "3ecb1e88acd17a0d07aab8a20570d15f539f9f14edc80ce7dc465ec87ae48892",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\epoch_8.pt": "ddc8e0aad3cc3491eaa14eb93653a75adff084d9b817d4cddcdc87603511911f",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s43_a1\\training_state.pt": "2b791195e2c668c675045a15937a2538aab5a52c66233e5c65889e4fc258be05",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\config.yaml": "34e3bc6e8afdcc345515de99f6638d62d293946c8b8dd40b10a472887a6b4d10",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\preprocessing.json": "2fe766b7f0a9b0bb115954955837f8b1f7a5c0fbc7ccce1a4b95f90d5a921b94",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\training_protocol.json": "3f6273ccc3c9edb8a4bd853f42635a3af98f857400b8b5f6fcad3fbe468efc9f",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\train_verification.json": "3ecb1e88acd17a0d07aab8a20570d15f539f9f14edc80ce7dc465ec87ae48892",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\epoch_8.pt": "e2cdae74ce9188e03fef2ed62ccea63dd893a5dd18f18f4b0b93e50747f896c3",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\m6_history_v1\\runs\\research_P6_F0_s44_a1\\training_state.pt": "96978a4d8502fdcf0bd04db76a5b380c05de10259d4577148f82acb42dbe433c",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\bce_three_encoder_v1\\audit_models.py": "c2dc13b24f7607614dd192189d7a2d3e31571aedcc92da50ec3df693c14365c8",
+    "C:\\Users\\14815\\Projects\\quant\\docs\\research_20261119_bce_three_encoder_protocol.md": "82fe740d788d05f7c0262b5bd4ac30779f1c3a5c3b31ca57a4bb2cbc53b87c8b"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "steps": {
+    "42": 100,
+    "43": 14,
+    "44": 67
+  },
+  "hashes": {
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\bce_old_selector_transfer_v1\\matched_steps.py": "d374ca2de04868d31aace99e56c77674f413c08d383fe51bc57f0c720852ec2d",
+    "C:\\Users\\14815\\Projects\\quant\\docs\\research_20261118_bce_old_selector_fixed_steps_protocol.md": "ca3ffe03e50c11cc5a0d002e5f45ff9e0b4451c77fa7d027261a569629dd76fa",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\bce_resample_steps_v1\\validation_lock.json": "7e2071912c90fadae0f54d1affeb99d74d97d998e5530b08fe0e9e5e49c79ee2",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\bce_resample_low_grid_v1\\validation_lock.json": "f9b298e96de7a73fe9262a00dfdd01ad6de0643a2fb680aa16ede07effa04487",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\directional_2018\\features_s44.npz": "4cdb66e90629845b74a257560c4802ca2d5c6abb46336c54713f185f5f931fd5",
+    "C:\\Users\\14815\\Projects\\quant\\outputs\\bce_resample_low_grid_v1\\fixed_5_44.pt": "7c29fb1ad30360261b265bc8b557140fc19e00a2c128020eeb3a745559d45af6"
+  },
+  "checkpoint_sha256": "fe6cff4fdd5d3e5a3d6b5e9ab47916299265ece3289b47167d3996e11f0f3bd1"
+}

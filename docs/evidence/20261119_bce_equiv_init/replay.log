@@ -1,0 +1,31 @@
+Locked all 12 validation checkpoints before test inference
+                   arm  long_slots  fee  annual_calendar  max_drawdown    sharpe
+             old_plain          20   10         0.181315      0.428400  0.708781
+             old_plain          20   30        -0.003071      0.524644  0.142831
+   old_plain_fixedstep          20   10         0.181315      0.428400  0.708781
+   old_plain_fixedstep          20   30        -0.003071      0.524644  0.142831
+           equiv_plain          20   10         0.190350      0.368181  0.733589
+           equiv_plain          20   30         0.006921      0.473357  0.176277
+ equiv_plain_fixedstep          20   10         0.190350      0.368181  0.733589
+ equiv_plain_fixedstep          20   30         0.006921      0.473357  0.176277
+            old_fixed5          20   10         0.197967      0.380328  0.757617
+            old_fixed5          20   30         0.011336      0.483623  0.190079
+  old_fixed5_fixedstep          20   10         0.197967      0.380328  0.757617
+  old_fixed5_fixedstep          20   30         0.011336      0.483623  0.190079
+          equiv_fixed5          20   10         0.246899      0.315044  0.891160
+          equiv_fixed5          20   30         0.057899      0.406064  0.340587
+equiv_fixed5_fixedstep          20   10         0.246899      0.315044  0.891160
+equiv_fixed5_fixedstep          20   30         0.057899      0.406064  0.340587
+          base40_plain          20   10         0.500090      0.279030  1.574941
+          base40_plain          20   30         0.309099      0.287279  1.094235
+           naive_plain          20   10         0.075717      0.506010  0.393579
+           naive_plain          20   30        -0.093627      0.631970 -0.156114
+         base40_fixed5          20   10         0.521373      0.279030  1.632140
+         base40_fixed5          20   30         0.327254      0.287279  1.147536
+          naive_fixed5          20   10         0.099021      0.509944  0.464436
+          naive_fixed5          20   30        -0.073123      0.634061 -0.089302
+          base40_plain          40   10         0.481436      0.265932  1.561286
+          base40_plain          40   30         0.302476      0.273472  1.095768
+         base40_fixed5          40   10         0.501141      0.265932  1.615144
+         base40_fixed5          40   30         0.319111      0.273472  1.145403
+Completed paired equivalent initialization and old40 execution verification

@@ -1,0 +1,21 @@
+[
+  {
+    "kind": "input",
+    "mean_absolute": 0.0,
+    "maximum_absolute": 0.0,
+    "fraction_changed_1e6": 0.0,
+    "normalization": "legacy_z"
+  },
+  {
+    "kind": "vectors",
+    "phase": "trainval",
+    "mean_absolute": 0.0,
+    "maximum_absolute": 0.0
+  },
+  {
+    "kind": "vectors",
+    "phase": "test",
+    "mean_absolute": 0.0,
+    "maximum_absolute": 0.0
+  }
+]

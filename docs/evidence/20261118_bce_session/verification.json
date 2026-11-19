@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "archive_files": 76,
+  "archive_bytes": 783760,
+  "hashes_verified": true,
+  "origin_hashes_verified": true,
+  "local_links_verified": 43,
+  "final_metric_rows_reproduced": 7,
+  "git_ignored_evidence_files": 0,
+  "manifest_sha256": "70424049cffa89d9a2f1281038b4680602eb1d68dcd4c31e502279bdb4d0a209",
+  "large_data_and_weights": "Local only, off-machine backup unverified",
+  "git_commit_created": false
+}

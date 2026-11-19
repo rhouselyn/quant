@@ -1,0 +1,94 @@
+Encoded 42 train 0 473 seconds 1.8
+Encoded 42 train 100 473 seconds 7.7
+Encoded 42 train 200 473 seconds 13.3
+Encoded 42 train 300 473 seconds 19.8
+Encoded 42 train 400 473 seconds 25.6
+Encoded 42 validation 0 123 seconds 30.9
+Encoded 42 validation 100 123 seconds 39.0
+Encoded 42 test 0 295 seconds 42.2
+Encoded 42 test 100 295 seconds 47.6
+Encoded 42 test 200 295 seconds 53.6
+Encoded 43 train 0 473 seconds 1.0
+Encoded 43 train 100 473 seconds 6.8
+Encoded 43 train 200 473 seconds 12.8
+Encoded 43 train 300 473 seconds 20.0
+Encoded 43 train 400 473 seconds 25.7
+Encoded 43 validation 0 123 seconds 31.5
+Encoded 43 validation 100 123 seconds 41.0
+Encoded 43 test 0 295 seconds 44.8
+Encoded 43 test 100 295 seconds 51.6
+Encoded 43 test 200 295 seconds 57.9
+Encoded 44 train 0 473 seconds 1.6
+Encoded 44 train 100 473 seconds 1.7
+Encoded 44 train 200 473 seconds 1.8
+Encoded 44 train 300 473 seconds 3.5
+Encoded 44 train 400 473 seconds 3.7
+Encoded 44 validation 0 123 seconds 5.2
+Encoded 44 validation 100 123 seconds 9.6
+Encoded 44 test 0 295 seconds 12.9
+Encoded 44 test 100 295 seconds 13.8
+Encoded 44 test 200 295 seconds 14.9
+e3_plain_f10 42 selected 100 val 0.6898207068443298
+e3_fixed5_f10 42 selected 100 val 0.6897917985916138
+e3_plain_f10 43 selected 9 val 0.6953210830688477
+e3_fixed5_f10 43 selected 9 val 0.6954410076141357
+e3_plain_f10 44 selected 10 val 0.6898187398910522
+e3_fixed5_f10 44 selected 10 val 0.6896817684173584
+best_plain_f10 42 selected 35 val 0.6935726404190063
+best_plain_f30 42 selected 24 val 0.690452516078949
+best_plain_free 42 selected 24 val 0.690452516078949
+best_fixed5_f10 42 selected 35 val 0.69361811876297
+best_fixed5_f30 42 selected 24 val 0.6906009316444397
+best_fixed5_free 42 selected 24 val 0.6906009316444397
+best_plain_f10 43 selected 3 val 0.6947658061981201
+best_plain_f30 43 selected 3 val 0.6947658061981201
+best_plain_free 43 selected 3 val 0.6947658061981201
+best_fixed5_f10 43 selected 1 val 0.6950038075447083
+best_fixed5_f30 43 selected 1 val 0.6950038075447083
+best_fixed5_free 43 selected 1 val 0.6950038075447083
+best_plain_f10 44 selected 10 val 0.6898187398910522
+best_plain_f30 44 selected 10 val 0.6898187398910522
+best_plain_free 44 selected 10 val 0.6898187398910522
+best_fixed5_f10 44 selected 10 val 0.6896817684173584
+best_fixed5_f30 44 selected 10 val 0.6896817684173584
+best_fixed5_free 44 selected 10 val 0.6896817684173584
+rawold_plain_f10 42 selected 35 val 0.693565845489502
+rawold_fixed5_f10 42 selected 35 val 0.6936113834381104
+rawold_plain_f10 43 selected 3 val 0.6948124170303345
+rawold_fixed5_f10 43 selected 1 val 0.6950565576553345
+rawold_plain_f10 44 selected 10 val 0.6898162364959717
+rawold_fixed5_f10 44 selected 10 val 0.6896792650222778
+Locked all 30 heads and validation freeze choices before test prediction
+              arm  fee  annual_calendar  max_drawdown   sharpe
+     e3_plain_f10   10         0.341137      0.369473 1.150265
+     e3_plain_f10   30         0.140301      0.586022 0.596859
+    e3_fixed5_f10   10         0.344537      0.369473 1.159121
+    e3_fixed5_f10   30         0.144198      0.586022 0.608540
+   best_plain_f10   10         0.363648      0.354027 1.221987
+   best_plain_f10   30         0.190338      0.444628 0.749612
+   best_plain_f30   10         0.381243      0.329749 1.262070
+   best_plain_f30   30         0.202886      0.432088 0.783428
+  best_plain_free   10         0.381243      0.329749 1.262070
+  best_plain_free   30         0.202886      0.432088 0.783428
+  best_fixed5_f10   10         0.368862      0.352848 1.236406
+  best_fixed5_f10   30         0.211101      0.408261 0.810461
+  best_fixed5_f30   10         0.356327      0.352848 1.205171
+  best_fixed5_f30   30         0.197332      0.408261 0.770748
+ best_fixed5_free   10         0.356327      0.352848 1.205171
+ best_fixed5_free   30         0.197332      0.408261 0.770748
+ rawold_plain_f10   10         0.363648      0.354027 1.221987
+ rawold_plain_f10   30         0.190338      0.444628 0.749612
+rawold_fixed5_f10   10         0.368862      0.352848 1.236406
+rawold_fixed5_f10   30         0.211101      0.408261 0.810461
+ swap42_plain_f10   10         0.286517      0.363856 1.016504
+ swap42_plain_f10   30         0.109256      0.564934 0.505075
+ swap43_plain_f10   10         0.341754      0.390365 1.163516
+ swap43_plain_f10   30         0.149988      0.560447 0.630777
+swap42_fixed5_f10   10         0.292369      0.363856 1.031288
+swap42_fixed5_f10   30         0.115144      0.564934 0.523022
+swap43_fixed5_f10   10         0.376740      0.352848 1.259995
+swap43_fixed5_f10   30         0.198237      0.425821 0.776070
+        old_plain   10         0.500090      0.279030 1.574941
+        old_plain   30         0.309099      0.287279 1.094235
+       old_fixed5   10         0.514118      0.279030 1.613233
+       old_fixed5   30         0.319731      0.287279 1.125808

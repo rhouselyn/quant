@@ -1,0 +1,15 @@
+{
+  "status": "complete",
+  "new_heads_trained": 16,
+  "reused_new_heads_for_single": 2,
+  "main_training_rows": 1200,
+  "single_training_rows": 400,
+  "original_price_basket_labels_checked": 3912,
+  "original_cache_encoder_date_rows": 2673,
+  "full_forward_checks": 12,
+  "native_training_cases": 12,
+  "main_weekly_rows_reproduced": 14160,
+  "main_metric_rows": 48,
+  "single_metric_rows": 24,
+  "main_direction_changes": 0
+}

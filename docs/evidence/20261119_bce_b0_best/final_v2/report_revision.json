@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "reason": "add conclusions, cost attribution, and constant-direction reference; training and ledgers unchanged",
+  "previous_manifest_sha256": "08e9c886159e096e6d230267a70b77c698f67ff7837f7d31419ccdcf50ac7fc6",
+  "previous_report_sha256": "77da4b05358d2d3ee1caa0025c7ae8ebaa4188d611dc8ef0b512c0acb3c854ea",
+  "previous_copy_sha256": "77da4b05358d2d3ee1caa0025c7ae8ebaa4188d611dc8ef0b512c0acb3c854ea"
+}

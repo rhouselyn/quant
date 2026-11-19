@@ -1,0 +1,10 @@
+family,phase,kind,affected_weeks,affected_baskets,missing_long,missing_short
+old,train,base,0,0,0,0
+old,train,augmentation,32,74,43,34
+old,validation,base,0,0,0,0
+B0,train,base,55,55,36,25
+B0,train,augmentation,40,91,80,31
+B0,validation,base,3,3,1,2
+P6,train,base,69,69,57,30
+P6,train,augmentation,44,98,72,52
+P6,validation,base,8,8,5,3

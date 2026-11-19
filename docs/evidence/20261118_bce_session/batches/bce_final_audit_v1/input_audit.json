@@ -1,0 +1,46 @@
+{
+  "checks": [
+    {
+      "seed": 42,
+      "sample_dates": [
+        "2021-01-08",
+        "2024-02-09",
+        "2024-09-20",
+        "2026-05-22",
+        "2026-10-09"
+      ],
+      "cache_vectors_and_scores_reproduced": true,
+      "labels_not_input": true,
+      "future_rows_not_input": true
+    },
+    {
+      "seed": 43,
+      "sample_dates": [
+        "2021-01-08",
+        "2024-02-09",
+        "2024-09-20",
+        "2026-05-22",
+        "2026-10-09"
+      ],
+      "cache_vectors_and_scores_reproduced": true,
+      "labels_not_input": true,
+      "future_rows_not_input": true
+    },
+    {
+      "seed": 44,
+      "sample_dates": [
+        "2021-01-08",
+        "2024-02-09",
+        "2024-09-20",
+        "2026-05-22",
+        "2026-10-09"
+      ],
+      "cache_vectors_and_scores_reproduced": true,
+      "labels_not_input": true,
+      "future_rows_not_input": true
+    }
+  ],
+  "daily_path_symbol": "000001.SZ.parquet",
+  "daily_path_prefix_equal": true,
+  "scope": "sampled model reconstruction and source-path causality, not a complete PIT vendor audit"
+}

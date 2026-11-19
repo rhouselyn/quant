@@ -1,0 +1,51 @@
+old_plain 42 selected 100 val_bce 0.6888711452484131
+old_fixed5 42 selected 100 val_bce 0.6889577507972717
+old_plain 43 selected 14 val_bce 0.6882417798042297
+old_fixed5 43 selected 14 val_bce 0.6883860230445862
+old_plain 44 selected 67 val_bce 0.682877779006958
+old_fixed5 44 selected 81 val_bce 0.6830938458442688
+B0_plain 42 selected 5 val_bce 0.6940169930458069
+B0_fixed5 42 selected 5 val_bce 0.6939458847045898
+B0_plain 43 selected 1 val_bce 0.6917728185653687
+B0_fixed5 43 selected 1 val_bce 0.6917352080345154
+B0_plain 44 selected 18 val_bce 0.6937022805213928
+B0_fixed5 44 selected 18 val_bce 0.6936537027359009
+P6_plain 42 selected 37 val_bce 0.6893096566200256
+P6_fixed5 42 selected 37 val_bce 0.6892991065979004
+P6_plain 43 selected 7 val_bce 0.684110701084137
+P6_fixed5 43 selected 8 val_bce 0.6841602921485901
+P6_plain 44 selected 26 val_bce 0.6943902373313904
+P6_fixed5 44 selected 26 val_bce 0.6943904757499695
+Locked all 18 heads on original validation dates
+Replayed native40 signals on old 20/10
+Replayed native40 signals on B0 20/10
+Replayed native40 signals on P6 20/10
+book        arm  fee  annual_calendar  max_drawdown    sharpe
+ old  old_plain   10         0.500090      0.279030  1.574941
+ old  old_plain   30         0.309099      0.287279  1.094235
+ old old_fixed5   10         0.514118      0.279030  1.613233
+ old old_fixed5   30         0.319731      0.287279  1.125808
+ old   B0_plain   10         0.258047      0.293744  0.938878
+ old   B0_plain   30         0.100976      0.448307  0.478630
+ old  B0_fixed5   10         0.341886      0.293744  1.157794
+ old  B0_fixed5   30         0.175162      0.448307  0.700033
+ old   P6_plain   10         0.212600      0.328028  0.809921
+ old   P6_plain   30         0.059845      0.410942  0.347597
+ old  P6_fixed5   10         0.162278      0.316642  0.656598
+ old  P6_fixed5   30         0.006126      0.510357  0.172848
+  B0  old_plain   10         0.406493      0.264872  1.381624
+  B0  old_plain   30         0.238544      0.299491  0.917043
+  B0 old_fixed5   10         0.423292      0.264872  1.429605
+  B0 old_fixed5   30         0.251378      0.299491  0.957057
+  B0   B0_plain   10         0.207147      0.409933  0.801116
+  B0   B0_plain   30         0.066376      0.539234  0.369044
+  B0  B0_fixed5   10         0.278022      0.409933  0.987488
+  B0  B0_fixed5   30         0.129603      0.539234  0.563301
+  P6  old_plain   10         0.506877      0.253586  1.516874
+  P6  old_plain   30         0.264895      0.412919  0.933554
+  P6 old_fixed5   10         0.530141      0.253586  1.564086
+  P6 old_fixed5   30         0.283731      0.419269  0.980589
+  P6   P6_plain   10         0.213330      0.323619  0.771405
+  P6   P6_plain   30         0.021583      0.377308  0.228137
+  P6  P6_fixed5   10         0.126446      0.347422  0.533486
+  P6  P6_fixed5   30        -0.056834      0.516978 -0.018255

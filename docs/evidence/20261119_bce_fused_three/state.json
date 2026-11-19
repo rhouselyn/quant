@@ -1,0 +1,19 @@
+{
+  "status": "complete",
+  "heads_trained": 12,
+  "training_rows": 1200,
+  "train_weeks": 473,
+  "validation_weeks": 123,
+  "test_weeks": 295,
+  "metric_rows": 136,
+  "weekly_rows": 40120,
+  "reference_weekly_rows_reproduced": 16520,
+  "actual_book_variants": 5,
+  "report_complete": true,
+  "independent_metric_rows": 136,
+  "paired_comparisons": 168,
+  "full_forward_checks": 18,
+  "input_hashes_verified": 343,
+  "selected_validation_bce_verified": true,
+  "mean_logit_verified": true
+}

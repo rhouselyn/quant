@@ -1,0 +1,164 @@
+[
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\run.py",
+    "copy": "run.py",
+    "bytes": 15677,
+    "sha256": "c5d42d81955d46df9567d1aa22a4563d9a019929bb3988077be6f22b2edc566a"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 20936,
+    "sha256": "931425317998ae75772e2fdbf06a7249c2026f8381a6e4f8f537a66afa6dad4c"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\run.log",
+    "copy": "run.log",
+    "bytes": 3213,
+    "sha256": "500cf0c24f43069566dc1f372022ff316a70e9c6be0d028c6a118aacdbcf1b1c"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\model_inventory.json",
+    "copy": "model_inventory.json",
+    "bytes": 4632,
+    "sha256": "84c44b5ba8a256eba07018096fadd5e96e3521e472eed1adafbbbcc03fd5667b"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\dates.json",
+    "copy": "dates.json",
+    "bytes": 16993,
+    "sha256": "87477c8113ed0218aff67b1459d50936635c28556a0f192d9baef8450dedad7f"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\common_baskets.csv",
+    "copy": "common_baskets.csv",
+    "bytes": 837680,
+    "sha256": "70f725f01ba2862f4ad4b6cbc3aa32580fcde42c0196b7a57ec9b60d419c0226"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\missing_returns.csv",
+    "copy": "missing_returns.csv",
+    "bytes": 3119,
+    "sha256": "4cef63bf6d06d922aa705c7485e6d6bcbc0a00c8b1f968e094592f4594a617c0"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 7354,
+    "sha256": "2ea97cdf6955be00fc7f3c9f0d23cc938dabe9eafcbfadd22bd5846b3d4f15d5"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\loss_checks.csv",
+    "copy": "loss_checks.csv",
+    "bytes": 1167,
+    "sha256": "d958e109686a81787963d01b58f7255728ad63df356463ee1c177fdd0c00ece3"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\old_parameter_reproduction.csv",
+    "copy": "old_parameter_reproduction.csv",
+    "bytes": 141,
+    "sha256": "7a2147bfb9bc3aa061d4eb360659844f309d31e47d6a9d172f2310388a2789df"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 103502,
+    "sha256": "409d2f10e321dfb15392795970a96d18cceaeb47ce335197fc9abcebc6e60eb3"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 40799,
+    "sha256": "8b7bfae0a82bef7c87e1ea01b5c288f8f4fac1cfc148aaa7b0c436492b143bd7"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 23679,
+    "sha256": "b60150ba290b461f915192028420229c584b6f47359300757eed4d883b897d49"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\member_logits.csv",
+    "copy": "member_logits.csv",
+    "bytes": 64086,
+    "sha256": "fb7d9cdb979ccf43c1edf62078d60aa6607f40b0405fc0b3a0c3b8fff82c549d"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 4868,
+    "sha256": "ffa6bd034b39d57891f4a48bb8c9838147adbd4c3f714530ac464dd5cbb4cba9"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\selected_steps.csv",
+    "copy": "selected_steps.csv",
+    "bytes": 491,
+    "sha256": "ce53f2fd8faa98857e703d4f462963424c1073d9ce78bfc762abd1671d4a11f4"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\validation_ensemble.csv",
+    "copy": "validation_ensemble.csv",
+    "bytes": 372,
+    "sha256": "750d55a39a063aa1b8d7ce431491311d6ef18f0f12aa94ac64c33a88ebfcc5a4"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 3226,
+    "sha256": "299ee45bc0ca05804e17f68e321f4dd82197f9e7134ae525789bf898ae6a9e40"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 3668,
+    "sha256": "5f33bb8703bae5e4f9346ba52db07163936fe7d555c654e3a97e3e08f340138f"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\attribution.csv",
+    "copy": "attribution.csv",
+    "bytes": 1214,
+    "sha256": "145133b13e2340e7512b330df25bb98ee7f783707256a9cb9a9226cf3a5b6171"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\yearly.csv",
+    "copy": "yearly.csv",
+    "bytes": 17773,
+    "sha256": "b28ee17a415743d3ec96326ae0b5c67f4c1da9da0826f22450acaee68775320c"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\task_comparison.csv",
+    "copy": "task_comparison.csv",
+    "bytes": 346,
+    "sha256": "157265ca57bb8ef94bb956673e13ea5fed621ce5e78486343daea487dbeebb15"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 23279,
+    "sha256": "30ed2c0db5b911210679336b15160b51eed083dd14081c5628d702c8c6fde563"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 572,
+    "sha256": "ba75d673b32af0f56393cdf420c9c3a9e3db82dbbe50a8188b31ae0d53c07b71"
+  },
+  {
+    "source": "outputs\\bce_old_roster_vectors_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 572,
+    "sha256": "ba75d673b32af0f56393cdf420c9c3a9e3db82dbbe50a8188b31ae0d53c07b71"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\train_replay.py",
+    "copy": "fit_source.py",
+    "bytes": 9200,
+    "sha256": "2d21be06797cb6f8980ad58c964bb00480e293976518ae8b26ff9d409decfdf2"
+  },
+  {
+    "source": "docs\\research_20261119_bce_old_roster_vectors_protocol.md",
+    "copy": "protocol.md",
+    "bytes": 4516,
+    "sha256": "381cd833a23a575a9010b15c78a3515bf4db7e71d577a1856678e5c3ee5a69b1"
+  }
+]

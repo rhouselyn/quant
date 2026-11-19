@@ -1,0 +1,102 @@
+Reusing B0 train 1
+Reusing B0 train 2
+Reusing B0 train 3
+Reusing B0 train 6
+Reusing B0 train 7
+Reusing B0 train 8
+Reusing B0 validation 1
+Reusing B0 validation 2
+Reusing B0 validation 3
+Reusing B0 validation 6
+Reusing B0 validation 7
+Reusing B0 validation 8
+Reusing B0 test 1
+Reusing B0 test 2
+Reusing B0 test 3
+Reusing B0 test 6
+Reusing B0 test 7
+Reusing B0 test 8
+Reusing P6 train 3
+Reusing P6 train 4
+Reusing P6 train 5
+Reusing P6 train 6
+Reusing P6 train 7
+P6 train 8 1 473 seconds 1.9
+P6 train 8 51 473 seconds 3.8
+P6 train 8 101 473 seconds 5.5
+P6 train 8 151 473 seconds 7.2
+P6 train 8 201 473 seconds 9.0
+P6 train 8 251 473 seconds 10.7
+P6 train 8 301 473 seconds 12.4
+P6 train 8 351 473 seconds 14.0
+P6 train 8 401 473 seconds 15.7
+P6 train 8 451 473 seconds 17.5
+P6 train 8 473 473 seconds 18.3
+P6 validation 3 1 133 seconds 0.1
+P6 validation 3 51 133 seconds 2.3
+P6 validation 3 101 133 seconds 4.3
+P6 validation 3 133 133 seconds 5.4
+P6 validation 4 1 133 seconds 0.0
+P6 validation 4 51 133 seconds 1.7
+P6 validation 4 101 133 seconds 3.6
+P6 validation 4 133 133 seconds 4.8
+P6 validation 5 1 133 seconds 0.1
+P6 validation 5 51 133 seconds 2.0
+P6 validation 5 101 133 seconds 3.8
+P6 validation 5 133 133 seconds 5.0
+P6 validation 6 1 133 seconds 0.0
+P6 validation 6 51 133 seconds 1.9
+P6 validation 6 101 133 seconds 3.6
+P6 validation 6 133 133 seconds 4.7
+P6 validation 7 1 133 seconds 0.0
+P6 validation 7 51 133 seconds 1.9
+P6 validation 7 101 133 seconds 3.8
+P6 validation 7 133 133 seconds 5.0
+P6 validation 8 1 133 seconds 0.0
+P6 validation 8 51 133 seconds 1.9
+P6 validation 8 101 133 seconds 4.0
+P6 validation 8 133 133 seconds 5.3
+P6 test 3 1 295 seconds 0.1
+P6 test 3 51 295 seconds 2.3
+P6 test 3 101 295 seconds 4.0
+P6 test 3 151 295 seconds 5.7
+P6 test 3 201 295 seconds 7.4
+P6 test 3 251 295 seconds 9.1
+P6 test 3 295 295 seconds 10.6
+P6 test 4 1 295 seconds 0.1
+P6 test 4 51 295 seconds 2.0
+P6 test 4 101 295 seconds 4.0
+P6 test 4 151 295 seconds 5.7
+P6 test 4 201 295 seconds 7.8
+P6 test 4 251 295 seconds 10.1
+P6 test 4 295 295 seconds 11.8
+P6 test 5 1 295 seconds 0.1
+P6 test 5 51 295 seconds 2.1
+P6 test 5 101 295 seconds 4.4
+P6 test 5 151 295 seconds 6.3
+P6 test 5 201 295 seconds 8.3
+P6 test 5 251 295 seconds 10.1
+P6 test 5 295 295 seconds 11.8
+P6 test 6 1 295 seconds 0.1
+P6 test 6 51 295 seconds 2.0
+P6 test 6 101 295 seconds 3.9
+P6 test 6 151 295 seconds 5.7
+P6 test 6 201 295 seconds 7.4
+P6 test 6 251 295 seconds 9.2
+P6 test 6 295 295 seconds 10.8
+P6 test 7 1 295 seconds 0.0
+P6 test 7 51 295 seconds 1.8
+P6 test 7 101 295 seconds 3.5
+P6 test 7 151 295 seconds 5.4
+Pausing for GPU owner P6 test 7 191
+P6 test 7 201 295 seconds 172.9
+P6 test 7 251 295 seconds 175.9
+P6 test 7 295 295 seconds 178.8
+P6 test 8 1 295 seconds 0.1
+P6 test 8 51 295 seconds 3.3
+P6 test 8 101 295 seconds 6.4
+P6 test 8 151 295 seconds 9.5
+P6 test 8 201 295 seconds 12.5
+P6 test 8 251 295 seconds 15.4
+P6 test 8 295 295 seconds 17.4
+Prepared all 473/133/295 native inputs without dropping dates

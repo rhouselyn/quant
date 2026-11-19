@@ -1,0 +1,175 @@
+{
+  "rule": "lowest ensemble validation BCE; ties f10,f30,free within 1e-12",
+  "choices": [
+    {
+      "family": "old",
+      "suffix": "plain",
+      "selected_mode": "free",
+      "selected_arm": "old_plain_free",
+      "validation_bce": 0.6846001148223877
+    },
+    {
+      "family": "old",
+      "suffix": "fixed5",
+      "selected_mode": "free",
+      "selected_arm": "old_fixed5_free",
+      "validation_bce": 0.6847826242446899
+    },
+    {
+      "family": "B0",
+      "suffix": "plain",
+      "selected_mode": "free",
+      "selected_arm": "B0_plain_free",
+      "validation_bce": 0.6888554096221924
+    },
+    {
+      "family": "B0",
+      "suffix": "fixed5",
+      "selected_mode": "free",
+      "selected_arm": "B0_fixed5_free",
+      "validation_bce": 0.6889158487319946
+    },
+    {
+      "family": "P6",
+      "suffix": "plain",
+      "selected_mode": "free",
+      "selected_arm": "P6_plain_free",
+      "validation_bce": 0.6902573108673096
+    },
+    {
+      "family": "P6",
+      "suffix": "fixed5",
+      "selected_mode": "free",
+      "selected_arm": "P6_fixed5_free",
+      "validation_bce": 0.6902344822883606
+    }
+  ],
+  "validation": [
+    {
+      "arm": "old_plain_f10",
+      "family": "old",
+      "suffix": "plain",
+      "mode": "f10",
+      "ensemble_bce": 0.6859483122825623
+    },
+    {
+      "arm": "old_plain_f30",
+      "family": "old",
+      "suffix": "plain",
+      "mode": "f30",
+      "ensemble_bce": 0.6848964691162109
+    },
+    {
+      "arm": "old_plain_free",
+      "family": "old",
+      "suffix": "plain",
+      "mode": "free",
+      "ensemble_bce": 0.6846001148223877
+    },
+    {
+      "arm": "old_fixed5_f10",
+      "family": "old",
+      "suffix": "fixed5",
+      "mode": "f10",
+      "ensemble_bce": 0.6861463189125061
+    },
+    {
+      "arm": "old_fixed5_f30",
+      "family": "old",
+      "suffix": "fixed5",
+      "mode": "f30",
+      "ensemble_bce": 0.6850540637969971
+    },
+    {
+      "arm": "old_fixed5_free",
+      "family": "old",
+      "suffix": "fixed5",
+      "mode": "free",
+      "ensemble_bce": 0.6847826242446899
+    },
+    {
+      "arm": "B0_plain_f10",
+      "family": "B0",
+      "suffix": "plain",
+      "mode": "f10",
+      "ensemble_bce": 0.690159261226654
+    },
+    {
+      "arm": "B0_plain_f30",
+      "family": "B0",
+      "suffix": "plain",
+      "mode": "f30",
+      "ensemble_bce": 0.6891973614692688
+    },
+    {
+      "arm": "B0_plain_free",
+      "family": "B0",
+      "suffix": "plain",
+      "mode": "free",
+      "ensemble_bce": 0.6888554096221924
+    },
+    {
+      "arm": "B0_fixed5_f10",
+      "family": "B0",
+      "suffix": "fixed5",
+      "mode": "f10",
+      "ensemble_bce": 0.6901717782020569
+    },
+    {
+      "arm": "B0_fixed5_f30",
+      "family": "B0",
+      "suffix": "fixed5",
+      "mode": "f30",
+      "ensemble_bce": 0.6892567276954651
+    },
+    {
+      "arm": "B0_fixed5_free",
+      "family": "B0",
+      "suffix": "fixed5",
+      "mode": "free",
+      "ensemble_bce": 0.6889158487319946
+    },
+    {
+      "arm": "P6_plain_f10",
+      "family": "P6",
+      "suffix": "plain",
+      "mode": "f10",
+      "ensemble_bce": 0.6934673190116882
+    },
+    {
+      "arm": "P6_plain_f30",
+      "family": "P6",
+      "suffix": "plain",
+      "mode": "f30",
+      "ensemble_bce": 0.6934673190116882
+    },
+    {
+      "arm": "P6_plain_free",
+      "family": "P6",
+      "suffix": "plain",
+      "mode": "free",
+      "ensemble_bce": 0.6902573108673096
+    },
+    {
+      "arm": "P6_fixed5_f10",
+      "family": "P6",
+      "suffix": "fixed5",
+      "mode": "f10",
+      "ensemble_bce": 0.6934764981269836
+    },
+    {
+      "arm": "P6_fixed5_f30",
+      "family": "P6",
+      "suffix": "fixed5",
+      "mode": "f30",
+      "ensemble_bce": 0.6934764981269836
+    },
+    {
+      "arm": "P6_fixed5_free",
+      "family": "P6",
+      "suffix": "fixed5",
+      "mode": "free",
+      "ensemble_bce": 0.6902344822883606
+    }
+  ]
+}

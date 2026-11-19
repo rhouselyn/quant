@@ -1,0 +1,17 @@
+single_plain 43 selected 100 val 0.6870856285095215
+single_plain 44 selected 100 val 0.6939039826393127
+single_fixed5 43 selected 100 val 0.6871721148490906
+single_fixed5 44 selected 100 val 0.6939619779586792
+book           arm  fee  annual_calendar  max_drawdown
+ old  single_plain   10         0.428437      0.279269
+ old  single_plain   30         0.237472      0.356672
+ old single_fixed5   10         0.439117      0.279269
+ old single_fixed5   30         0.246398      0.356672
+  B0  single_plain   10         0.283327      0.264872
+  B0  single_plain   30         0.125236      0.346520
+  B0 single_fixed5   10         0.290223      0.264872
+  B0 single_fixed5   30         0.130712      0.343167
+  P6  single_plain   10         0.390470      0.261751
+  P6  single_plain   30         0.161958      0.418756
+  P6 single_fixed5   10         0.395745      0.261751
+  P6 single_fixed5   30         0.166258      0.418756

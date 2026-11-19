@@ -1,0 +1,53 @@
+Prepared fixed legacy task old 42
+Prepared fixed legacy task old 43
+Prepared fixed legacy task old 44
+Prepared fixed legacy task B0 42
+Prepared fixed legacy task B0 43
+Prepared fixed legacy task B0 44
+Prepared fixed legacy task P6 42
+Prepared fixed legacy task P6 43
+Prepared fixed legacy task P6 44
+old_plain real encoder/head seed 42 selected 100 val 0.6888711452484131
+old_fixed5 real encoder/head seed 42 selected 100 val 0.6889577507972717
+old_plain real encoder/head seed 43 selected 14 val 0.6882417798042297
+old_fixed5 real encoder/head seed 43 selected 14 val 0.6883860230445862
+old_plain real encoder/head seed 44 selected 67 val 0.682877779006958
+old_fixed5 real encoder/head seed 44 selected 81 val 0.6830938458442688
+B0_plain real encoder/head seed 42 selected 100 val 0.6898207068443298
+B0_fixed5 real encoder/head seed 42 selected 100 val 0.6897917985916138
+B0_plain real encoder/head seed 43 selected 9 val 0.6953210830688477
+B0_fixed5 real encoder/head seed 43 selected 9 val 0.6954410076141357
+B0_plain real encoder/head seed 44 selected 10 val 0.6898187398910522
+B0_fixed5 real encoder/head seed 44 selected 10 val 0.6896817684173584
+P6_plain real encoder/head seed 42 selected 10 val 0.6929090023040771
+P6_fixed5 real encoder/head seed 42 selected 10 val 0.6928473114967346
+P6_plain real encoder/head seed 43 selected 9 val 0.693236231803894
+P6_fixed5 real encoder/head seed 43 selected 9 val 0.693195641040802
+P6_plain real encoder/head seed 44 selected 4 val 0.6983463764190674
+P6_fixed5 real encoder/head seed 44 selected 4 val 0.6983765959739685
+Locked all eighteen freshly trained heads before test inference.
+       arm rule  fee  annual_calendar  max_drawdown   sharpe
+ old_plain wide   10         0.301078      0.162343 1.814734
+ old_plain wide   30         0.131189      0.239474 0.889761
+ old_plain full   10         0.500090      0.279030 1.574941
+ old_plain full   30         0.309099      0.287279 1.094235
+old_fixed5 wide   10         0.304766      0.153915 1.842940
+old_fixed5 wide   30         0.133995      0.246842 0.910140
+old_fixed5 full   10         0.514118      0.279030 1.613233
+old_fixed5 full   30         0.319731      0.287279 1.125808
+  B0_plain wide   10         0.258761      0.159837 1.574432
+  B0_plain wide   30         0.086187      0.295200 0.615323
+  B0_plain full   10         0.341137      0.369473 1.150265
+  B0_plain full   30         0.140301      0.586022 0.596859
+ B0_fixed5 wide   10         0.259716      0.159837 1.579671
+ B0_fixed5 wide   30         0.087294      0.295200 0.622033
+ B0_fixed5 full   10         0.344537      0.369473 1.159121
+ B0_fixed5 full   30         0.144198      0.586022 0.608540
+  P6_plain wide   10         0.213902      0.216874 1.320879
+  P6_plain wide   30         0.062495      0.294928 0.466404
+  P6_plain full   10         0.195420      0.323032 0.776961
+  P6_plain full   30         0.066670      0.448864 0.370188
+ P6_fixed5 wide   10         0.213902      0.216874 1.320879
+ P6_fixed5 wide   30         0.062495      0.294928 0.466404
+ P6_fixed5 full   10         0.195420      0.323032 0.776961
+ P6_fixed5 full   30         0.066670      0.448864 0.370188

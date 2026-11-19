@@ -1,0 +1,7 @@
+seed,suffix,train_inputs_exact,training_loss_all100_exact
+42,plain,True,True
+42,fixed5,True,True
+43,plain,True,True
+43,fixed5,True,True
+44,plain,True,True
+44,fixed5,True,True

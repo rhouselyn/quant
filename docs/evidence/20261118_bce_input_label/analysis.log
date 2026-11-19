@@ -1,0 +1,14 @@
+suffix  fee  input_only  label_only  interaction    both  own_norm_paired  sampler_old_norm  own_norm_native   total
+ plain   10     -33.889     -21.737        9.574 -46.052          -17.665             0.000          -17.665 -63.717
+ plain   30     -39.097     -21.907        8.558 -52.447          -17.892             0.000          -17.892 -70.338
+fixed5   10     -36.129     -27.687       17.743 -46.073          -16.365             3.048          -15.049 -58.074
+fixed5   30     -41.601     -27.197       16.458 -52.340          -16.483             3.299          -15.269 -64.310
+    arm control  fee     net  gross_ret  trading_cost  borrow_cost
+B_plain A_plain   10 -33.889    -29.551         2.103        2.235
+C_plain A_plain   10 -21.737    -22.100         0.210       -0.572
+D_plain A_plain   10 -46.052    -40.412         2.494        3.146
+E_plain D_plain   10 -17.665    -17.144        -0.002        0.523
+F_plain D_plain   10   0.000      0.000         0.000        0.000
+G_plain F_plain   10 -17.665    -17.144        -0.002        0.523
+G_plain A_plain   10 -63.717    -57.556         2.492        3.670
+Verified all factorial controls and accounting.

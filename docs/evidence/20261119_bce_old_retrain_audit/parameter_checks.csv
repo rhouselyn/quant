@@ -1,0 +1,13 @@
+arm,seed,selected_step,max_parameter_difference
+cached_plain,42,100,0.0
+cached_plain,43,14,0.0
+cached_plain,44,67,0.0
+cached_fixed5,42,100,5.960464477539063e-08
+cached_fixed5,43,14,1.4901161193847656e-08
+cached_fixed5,44,81,5.960464477539063e-08
+current_plain,42,100,7.450580596923828e-08
+current_plain,43,14,5.960464477539063e-08
+current_plain,44,67,7.82310962677002e-08
+current_fixed5,42,100,1.0803341865539551e-07
+current_fixed5,43,14,6.705522537231445e-08
+current_fixed5,44,81,5.960464477539063e-08

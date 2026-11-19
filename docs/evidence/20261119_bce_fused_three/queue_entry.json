@@ -1,0 +1,17 @@
+{
+  "batch": {
+    "status": "waiting_gpu",
+    "pid": 39132,
+    "updated_at": "2026-11-19T03:19:48.859714+08:00"
+  },
+  "owner_at_check": {
+    "status": "training",
+    "updated_at": "2026-11-19T03:18:33.294468+08:00",
+    "pid": 43516,
+    "arm": "RANK"
+  },
+  "gpu_lock": {
+    "pid": 43516,
+    "task": "backbone_complementarity_v1"
+  }
+}

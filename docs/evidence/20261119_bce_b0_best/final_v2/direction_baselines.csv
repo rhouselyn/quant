@@ -1,0 +1,4 @@
+phase,always_long_accuracy,always_short_accuracy,constant_balanced_accuracy,training_majority_long,training_majority_accuracy
+train,0.4799154334038055,0.5200845665961945,0.5,False,0.5200845665961945
+validation,0.5284552845528455,0.4715447154471545,0.5,False,0.4715447154471545
+test,0.5627118644067797,0.43728813559322033,0.5,False,0.43728813559322033

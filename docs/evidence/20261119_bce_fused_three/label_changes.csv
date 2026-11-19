@@ -1,0 +1,5 @@
+family,phase,weeks,changed_labels,new_positive
+B0,train,473,18,220
+B0,validation,123,11,66
+P6,train,473,19,238
+P6,validation,123,7,63

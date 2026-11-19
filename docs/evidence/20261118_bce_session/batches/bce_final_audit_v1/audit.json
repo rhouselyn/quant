@@ -1,0 +1,159 @@
+{
+  "independent_ledger_matching": true,
+  "signal_recomputed": true,
+  "training_separation": [
+    {
+      "seed": 42,
+      "train_start": "2001-11-23 00:00:00",
+      "train_end": "2017-11-24 00:00:00",
+      "training_anchors": 763
+    },
+    {
+      "seed": 43,
+      "train_start": "2001-11-23 00:00:00",
+      "train_end": "2017-11-24 00:00:00",
+      "training_anchors": 763
+    },
+    {
+      "seed": 44,
+      "train_start": "2001-11-23 00:00:00",
+      "train_end": "2017-11-24 00:00:00",
+      "training_anchors": 763
+    }
+  ],
+  "selected_steps": [
+    {
+      "arm": "unaugmented",
+      "seed": 42,
+      "step": 100
+    },
+    {
+      "arm": "fixed_5",
+      "seed": 42,
+      "step": 100
+    },
+    {
+      "arm": "unaugmented",
+      "seed": 43,
+      "step": 14
+    },
+    {
+      "arm": "fixed_5",
+      "seed": 43,
+      "step": 14
+    },
+    {
+      "arm": "unaugmented",
+      "seed": 44,
+      "step": 67
+    },
+    {
+      "arm": "fixed_5",
+      "seed": 44,
+      "step": 81
+    }
+  ],
+  "matched_price_rows": 38520,
+  "held_event_rows": 38546,
+  "historical_exposure": "repeatedly read validation and test",
+  "omitted_schedule_weeks": [
+    {
+      "date": "2022-01-21 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2022-01-28 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2022-09-23 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 579
+    },
+    {
+      "date": "2022-09-30 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 579
+    },
+    {
+      "date": "2023-01-13 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2023-01-20 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2023-09-22 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2023-09-29 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2024-02-02 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2024-02-09 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2026-02-06 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 578
+    },
+    {
+      "date": "2026-02-13 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 579
+    },
+    {
+      "date": "2026-10-16 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    },
+    {
+      "date": "2026-10-23 00:00:00",
+      "long_count": 40,
+      "short_count": 10,
+      "any_future_valid": false,
+      "feature_available": 580
+    }
+  ]
+}

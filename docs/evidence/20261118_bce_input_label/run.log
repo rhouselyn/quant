@@ -1,0 +1,73 @@
+A_plain 42 selected 100 fixed 100
+A_fixed5 42 selected 100 fixed 100
+B_plain 42 selected 100 fixed 100
+B_fixed5 42 selected 100 fixed 100
+C_plain 42 selected 100 fixed 100
+C_fixed5 42 selected 100 fixed 100
+D_plain 42 selected 100 fixed 100
+D_fixed5 42 selected 100 fixed 100
+E_plain 42 selected 100 fixed 100
+E_fixed5 42 selected 100 fixed 100
+F_plain 42 selected 100 fixed 100
+F_fixed5 42 selected 100 fixed 100
+G_plain 42 selected 100 fixed 100
+G_fixed5 42 selected 100 fixed 100
+A_plain 43 selected 14 fixed 14
+A_fixed5 43 selected 14 fixed 14
+B_plain 43 selected 16 fixed 14
+B_fixed5 43 selected 16 fixed 14
+C_plain 43 selected 3 fixed 14
+C_fixed5 43 selected 3 fixed 14
+D_plain 43 selected 16 fixed 14
+D_fixed5 43 selected 16 fixed 14
+E_plain 43 selected 17 fixed 14
+E_fixed5 43 selected 17 fixed 14
+F_plain 43 selected 16 fixed 14
+F_fixed5 43 selected 16 fixed 14
+G_plain 43 selected 17 fixed 14
+G_fixed5 43 selected 17 fixed 14
+A_plain 44 selected 67 fixed 67
+A_fixed5 44 selected 81 fixed 81
+B_plain 44 selected 3 fixed 67
+B_fixed5 44 selected 3 fixed 81
+C_plain 44 selected 4 fixed 67
+C_fixed5 44 selected 4 fixed 81
+D_plain 44 selected 100 fixed 67
+D_fixed5 44 selected 100 fixed 81
+E_plain 44 selected 100 fixed 67
+E_fixed5 44 selected 100 fixed 81
+F_plain 44 selected 100 fixed 67
+F_fixed5 44 selected 100 fixed 81
+G_plain 44 selected 100 fixed 67
+G_fixed5 44 selected 100 fixed 81
+Locked all validation choices
+     arm  fee  annual_calendar  max_drawdown    sharpe
+ A_plain   10         0.500090      0.279030  1.574941
+ A_plain   30         0.309099      0.287279  1.094235
+A_fixed5   10         0.521373      0.279030  1.632140
+A_fixed5   30         0.327254      0.287279  1.147536
+ B_plain   10         0.256965      0.280355  0.916118
+ B_plain   30         0.067459      0.412438  0.370200
+B_fixed5   10         0.259157      0.280355  0.918516
+B_fixed5   30         0.067457      0.415788  0.369852
+ C_plain   10         0.344346      0.316905  1.196721
+ C_plain   30         0.171750      0.336878  0.707019
+C_fixed5   10         0.322533      0.316905  1.140828
+C_fixed5   30         0.156136      0.336878  0.660222
+ D_plain   10         0.181315      0.428400  0.708781
+ D_plain   30        -0.003071      0.524644  0.142831
+D_fixed5   10         0.197967      0.380328  0.757617
+D_fixed5   30         0.011336      0.483623  0.190079
+ E_plain   10         0.075717      0.506010  0.393579
+ E_plain   30        -0.093627      0.631970 -0.156114
+E_fixed5   10         0.099021      0.509944  0.464436
+E_fixed5   30        -0.073123      0.634061 -0.089302
+ F_plain   10         0.181315      0.428400  0.708781
+ F_plain   30        -0.003071      0.524644  0.142831
+F_fixed5   10         0.216416      0.380328  0.807595
+F_fixed5   30         0.028233      0.479418  0.245707
+ G_plain   10         0.075717      0.506010  0.393579
+ G_plain   30        -0.093627      0.631970 -0.156114
+G_fixed5   10         0.123867      0.441537  0.537523
+G_fixed5   30        -0.051337      0.570718 -0.014296
+Completed factorial and fixed-stage ledgers; both original baselines reproduced

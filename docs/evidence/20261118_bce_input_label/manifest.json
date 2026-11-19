@@ -1,0 +1,116 @@
+[
+  {
+    "source": "outputs\\bce_input_label_v1\\run.py",
+    "copy": "run.py",
+    "bytes": 11536,
+    "sha256": "e79a33a868bf7d9ac4f5d2931d50bbcdcd8ef52fba562945936821817e43ba53"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\analyze.py",
+    "copy": "analyze.py",
+    "bytes": 6663,
+    "sha256": "dc41f22a2585b403f2b99f6d7b29b5e94b4314409ffd67f3a3c098c3d26a7772"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 16866,
+    "sha256": "d4c1341b3f63544658a20e30ceb8ac1f60d8618a124fdb2a47a41b2ed9d45864"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\run.log",
+    "copy": "run.log",
+    "bytes": 3173,
+    "sha256": "a6e5349dffe0b5d15026984eb52e210a3850cd9fc32486df7850c9969d8ede3d"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\analysis.log",
+    "copy": "analysis.log",
+    "bytes": 1183,
+    "sha256": "2ceee85790c236e46622b627baa3fd548ce7b92bdeaf778f422c1ee4bfebbdc9"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 11952,
+    "sha256": "d72aaff1c4ab034022d6e6bf7964097c84a3264245e70b405ae93a44ecf31508"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 223337,
+    "sha256": "49911cefc807b8b8c80f379f8832f7676a1a3d413637a8c40ce3f4ff9e3e1fac"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 12242,
+    "sha256": "499293011759988f49ead4f86b70fc6ac873615561dc966047f1e0931344ca3e"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 29673,
+    "sha256": "42b61a0002543be2ef4de6f911186cb9518afae011fd541f1bc6cfef7731cf39"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 100061,
+    "sha256": "32a82011ef0938f7685137b8c5f83f46b1f853e6b8753691bad6b91e794bdee3"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\decomposition.csv",
+    "copy": "decomposition.csv",
+    "bytes": 738,
+    "sha256": "3d5602d6d10d759cdb11bc34ad921921c88d46116978fd254870a2134379f41d"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 3746,
+    "sha256": "1bc159dd8bafea319c3c66cbed795b2769b43fc8ca1985f8bce830a5d5091b96"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\attribution.csv",
+    "copy": "attribution.csv",
+    "bytes": 2690,
+    "sha256": "252f8ee9a847c09ce1905e35fadfc1adb201c3a76b065d991b7e1792f948e810"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 259,
+    "sha256": "ae327c7aa984116c589f5c18618a83fc1a48a20fe72ae3d8a8164302ada5c253"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\normalization.csv",
+    "copy": "normalization.csv",
+    "bytes": 476,
+    "sha256": "f3c51f59e37dfb2c3410595690392af8af8a5e05a8adf053dc421d002f496545"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\label_changes.csv",
+    "copy": "label_changes.csv",
+    "bytes": 39678,
+    "sha256": "996ff0669fee628829bd8640cbce461c6f65d184c3e5022e0ef4e62d4135d940"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\largest_loss_weeks.csv",
+    "copy": "largest_loss_weeks.csv",
+    "bytes": 10298,
+    "sha256": "77fbee8c7a58916242086c583354054757f058ef9925a0e0ad8810331a56cee5"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 423,
+    "sha256": "eb4cc4aa8ac0ed6fa0ba97aa755315b73d2e633f2cd95bbcc406f472dfc1aac7"
+  },
+  {
+    "source": "outputs\\bce_input_label_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 7913,
+    "sha256": "7f2d326f22d65a88f154ea5070fbeeb8a6ed92651967beb01e68c0ad2d9be4ea"
+  }
+]

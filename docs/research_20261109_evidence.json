@@ -1,0 +1,210 @@
+{
+  "inspection_date_shanghai": "2026-11-09",
+  "scope": "read-only audit of existing artifacts; no training or baseline mutation",
+  "git_head": "f2e198e8769ab960b7c8d6a8aa2ba50eb1bb8fe3",
+  "working_tree_dirty": true,
+  "hashes": {
+    "configs/hierarchical_580_monopen_baseline.yaml": "2e669057a6b4ee75e66c877774df16d46cd7e79a06a99305464ba6dd4270bb25",
+    "src/quant_mvp/hierarchy_engine.py": "9276770abe845fc101dfa4e6e759373194ca668542e978cd3ffebbcb8f860879",
+    "src/quant_mvp/hierarchy_data.py": "dbbb32d00d6a7035de126130ff8aff3a79d034fad3e155772cb92af1a32f04c5",
+    "src/quant_mvp/long_only.py": "0a5aaaf63380bee0ad666370bf9b431c3d4b856a1c402254eb5e76ed01fdf478",
+    "src/quant_mvp/live_score.py": "07d288b1a0f232953ad03f97f11ef0afa05df8a0c3ea2b94fdb4ded5923288c7",
+    "scripts/ensemble_best_window.py": "b9189d3ab70677363295669f5f0c46d350d459dfa374e08c92cd1cd07159fc8d",
+    "scripts/merge_seed_runs.py": "8130c105fab5fc745cad57d526ef3aa9add90d0d25cd315433c3423831649d05",
+    "scripts/skipfill_short.py": "c45274e5f13a9784ea2da5896629aa33ac2ec9e98530aa1a4f1a20c79ebd24b3",
+    "scripts/fetch_margin_lists.py": "16f461aeffe4b214328cf53d0813061448c8503f9cf49c2c9523a48b5b892410",
+    "outputs/baseline_stack/combo_curve_test.csv": "fe6b79a6a6c86d44817d4c0f7004bf8738d7df566c0a06f672149029efde2e8d",
+    "outputs/baseline_stack/baseline_stack.json": "9a94ff4aac3be684ea36ce3adec6606de6cce5797843feeb46a95eb3f56bf707",
+    "data/sw_580_observed_features_2000_fri_path30/weekly.parquet": "d3d3a72c50776aa15f6290b9db3b5c5990c3d384329a6cd5da250e48c02d1ac4"
+  },
+  "yearly_method": "signal-date calendar grouping; product(1+r)-1; sqrt(52)*mean(r)/std(r,ddof=1); initial NAV=1 included for yearly MDD",
+  "warning": "archive is a research proxy with missing periods, stale-quarter eligibility, unmodelled borrow fees; this is not a point-in-time executable track record",
+  "test_curve_rows": 283,
+  "yearly": [
+    {
+      "year": 2021,
+      "leg": "long",
+      "observations": 52,
+      "period_return": 0.5926527297456881,
+      "annualized_sharpe_52": 2.5671701073718047,
+      "max_drawdown": -0.07364318831344263,
+      "first_signal_date": "2021-01-08",
+      "last_signal_date": "2021-12-31"
+    },
+    {
+      "year": 2021,
+      "leg": "short",
+      "observations": 52,
+      "period_return": -0.12983581858520854,
+      "annualized_sharpe_52": -0.3569510183673291,
+      "max_drawdown": -0.3104535278992915,
+      "first_signal_date": "2021-01-08",
+      "last_signal_date": "2021-12-31"
+    },
+    {
+      "year": 2021,
+      "leg": "combo",
+      "observations": 52,
+      "period_return": 0.20031184909311617,
+      "annualized_sharpe_52": 1.3851174392727004,
+      "max_drawdown": -0.10492289948070432,
+      "first_signal_date": "2021-01-08",
+      "last_signal_date": "2021-12-31"
+    },
+    {
+      "year": 2022,
+      "leg": "long",
+      "observations": 46,
+      "period_return": 0.2030067344128197,
+      "annualized_sharpe_52": 0.9433978488933452,
+      "max_drawdown": -0.19421212077293615,
+      "first_signal_date": "2022-01-07",
+      "last_signal_date": "2022-12-30"
+    },
+    {
+      "year": 2022,
+      "leg": "short",
+      "observations": 46,
+      "period_return": 0.6631993625547741,
+      "annualized_sharpe_52": 2.1049668449179997,
+      "max_drawdown": -0.08722170226980686,
+      "first_signal_date": "2022-01-07",
+      "last_signal_date": "2022-12-30"
+    },
+    {
+      "year": 2022,
+      "leg": "combo",
+      "observations": 46,
+      "period_return": 0.450611157016392,
+      "annualized_sharpe_52": 3.3294166835460386,
+      "max_drawdown": -0.04305209322619641,
+      "first_signal_date": "2022-01-07",
+      "last_signal_date": "2022-12-30"
+    },
+    {
+      "year": 2023,
+      "leg": "long",
+      "observations": 46,
+      "period_return": 0.033577575724827335,
+      "annualized_sharpe_52": 0.3104130026380387,
+      "max_drawdown": -0.07613388906020468,
+      "first_signal_date": "2023-01-06",
+      "last_signal_date": "2023-12-29"
+    },
+    {
+      "year": 2023,
+      "leg": "short",
+      "observations": 46,
+      "period_return": 0.2011842221896376,
+      "annualized_sharpe_52": 0.9623297614088638,
+      "max_drawdown": -0.1272527637211217,
+      "first_signal_date": "2023-01-06",
+      "last_signal_date": "2023-12-29"
+    },
+    {
+      "year": 2023,
+      "leg": "combo",
+      "observations": 46,
+      "period_return": 0.12869446203503965,
+      "annualized_sharpe_52": 1.227673849530108,
+      "max_drawdown": -0.07127421448528626,
+      "first_signal_date": "2023-01-06",
+      "last_signal_date": "2023-12-29"
+    },
+    {
+      "year": 2024,
+      "leg": "long",
+      "observations": 49,
+      "period_return": 0.08954114048202877,
+      "annualized_sharpe_52": 0.42358122525172565,
+      "max_drawdown": -0.2452088956943812,
+      "first_signal_date": "2024-01-05",
+      "last_signal_date": "2024-12-27"
+    },
+    {
+      "year": 2024,
+      "leg": "short",
+      "observations": 49,
+      "period_return": 0.6146440586089799,
+      "annualized_sharpe_52": 1.4221545039135284,
+      "max_drawdown": -0.32823675198069946,
+      "first_signal_date": "2024-01-05",
+      "last_signal_date": "2024-12-27"
+    },
+    {
+      "year": 2024,
+      "leg": "combo",
+      "observations": 49,
+      "period_return": 0.44407378083253457,
+      "annualized_sharpe_52": 3.2613449239777794,
+      "max_drawdown": -0.054163742787742164,
+      "first_signal_date": "2024-01-05",
+      "last_signal_date": "2024-12-27"
+    },
+    {
+      "year": 2025,
+      "leg": "long",
+      "observations": 52,
+      "period_return": 0.8059882163618746,
+      "annualized_sharpe_52": 2.9387778235216,
+      "max_drawdown": -0.11678760049875314,
+      "first_signal_date": "2025-01-03",
+      "last_signal_date": "2025-12-26"
+    },
+    {
+      "year": 2025,
+      "leg": "short",
+      "observations": 52,
+      "period_return": -0.3138393585971401,
+      "annualized_sharpe_52": -1.1568673729586463,
+      "max_drawdown": -0.3728211905333755,
+      "first_signal_date": "2025-01-03",
+      "last_signal_date": "2025-12-26"
+    },
+    {
+      "year": 2025,
+      "leg": "combo",
+      "observations": 52,
+      "period_return": 0.14266429483353726,
+      "annualized_sharpe_52": 1.1475751558298017,
+      "max_drawdown": -0.12506052171083892,
+      "first_signal_date": "2025-01-03",
+      "last_signal_date": "2025-12-26"
+    },
+    {
+      "year": 2026,
+      "leg": "long",
+      "observations": 38,
+      "period_return": -0.044999922642286916,
+      "annualized_sharpe_52": -0.09103067918696381,
+      "max_drawdown": -0.2873526855792582,
+      "first_signal_date": "2026-01-02",
+      "last_signal_date": "2026-10-09"
+    },
+    {
+      "year": 2026,
+      "leg": "short",
+      "observations": 38,
+      "period_return": 0.09925913619641191,
+      "annualized_sharpe_52": 0.5122051640807984,
+      "max_drawdown": -0.22588531491703956,
+      "first_signal_date": "2026-01-02",
+      "last_signal_date": "2026-10-09"
+    },
+    {
+      "year": 2026,
+      "leg": "combo",
+      "observations": 38,
+      "period_return": 0.06459844797628334,
+      "annualized_sharpe_52": 0.5713273236864151,
+      "max_drawdown": -0.10162907097531582,
+      "first_signal_date": "2026-01-02",
+      "last_signal_date": "2026-10-09"
+    }
+  ],
+  "checks_passed": [
+    "unique sorted dates",
+    "combo=(long+short)/2",
+    "all three aggregate annual returns match frozen JSON within rounding"
+  ]
+}

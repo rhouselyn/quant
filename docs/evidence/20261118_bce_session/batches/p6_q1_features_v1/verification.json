@@ -1,0 +1,58 @@
+{
+  "training_weeks": 473,
+  "validation_label_weeks": 123,
+  "validation_inference_weeks": 133,
+  "test_weeks": 283,
+  "supervision_matched": true,
+  "head_parameters": [
+    {
+      "arm": "p6_plain",
+      "seed": 42,
+      "parameters_identical": true
+    },
+    {
+      "arm": "p6_plain",
+      "seed": 43,
+      "parameters_identical": true
+    },
+    {
+      "arm": "p6_plain",
+      "seed": 44,
+      "parameters_identical": true
+    },
+    {
+      "arm": "p6_fixed5",
+      "seed": 42,
+      "parameters_identical": true
+    },
+    {
+      "arm": "p6_fixed5",
+      "seed": 43,
+      "parameters_identical": true
+    },
+    {
+      "arm": "p6_fixed5",
+      "seed": 44,
+      "parameters_identical": true
+    }
+  ],
+  "logit_change": {
+    "p6_plain": {
+      "max_abs": 0.012541189999999994,
+      "flips": 0
+    },
+    "p6_fixed5": {
+      "max_abs": 0.012885523999999995,
+      "flips": 0
+    }
+  },
+  "weekly_net_returns_identical": true,
+  "completed_single_head_replays": 6,
+  "all_training_vectors_identical": true,
+  "coverage_weeks": {
+    "test": 283,
+    "train": 473,
+    "val": 133
+  },
+  "q1_availability_applied_as_filter": false
+}

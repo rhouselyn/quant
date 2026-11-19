@@ -1,0 +1,13 @@
+arm,seed,selected_step,after_projection_freeze,val_bce
+B0_three_plain,42,5,False,0.6940169930458069
+B0_three_plain,43,4,False,0.6923289895057678
+B0_three_plain,44,6,False,0.6930394768714905
+B0_three_fixed5,42,5,False,0.6939458847045898
+B0_three_fixed5,43,4,False,0.6921688914299011
+B0_three_fixed5,44,6,False,0.6929361820220947
+P6_three_plain,42,37,True,0.6893096566200256
+P6_three_plain,43,6,False,0.6983862519264221
+P6_three_plain,44,3,False,0.6882727742195129
+P6_three_fixed5,42,37,True,0.6892991065979004
+P6_three_fixed5,43,6,False,0.6983720064163208
+P6_three_fixed5,44,3,False,0.6882703304290771

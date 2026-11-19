@@ -1,0 +1,164 @@
+[
+  {
+    "source": "outputs\\bce_three_encoder_v1\\audit_models.py",
+    "copy": "audit_models.py",
+    "bytes": 3959,
+    "sha256": "c2dc13b24f7607614dd192189d7a2d3e31571aedcc92da50ec3df693c14365c8"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\prepare.py",
+    "copy": "prepare.py",
+    "bytes": 11616,
+    "sha256": "6a23af3871b4cf42a078d7913dc448ee6f65983cac015842cbf366aefc931a6b"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\train_replay.py",
+    "copy": "train_replay.py",
+    "bytes": 9200,
+    "sha256": "2d21be06797cb6f8980ad58c964bb00480e293976518ae8b26ff9d409decfdf2"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 22384,
+    "sha256": "836609e9474377e40c14d16ae0445e7166749aedbdcd2a763b622e5d082144de"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\prepare.log",
+    "copy": "prepare.log",
+    "bytes": 1438,
+    "sha256": "bece46fc1377a712e502cf1ce62afcb2f6e158b4fb874d04ea9a666596817d0c"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\train.log",
+    "copy": "train.log",
+    "bytes": 4036,
+    "sha256": "70056370ca9eb374989b665a5981b7535eb1e8c73b5189782ae12912f942762a"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\model_inventory.json",
+    "copy": "model_inventory.json",
+    "bytes": 10706,
+    "sha256": "09dd6302b77ab4d504292d8d5610e5e7f8118d4a1348136d5f2c9ce43a7d3e0c"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\batch_identity.csv",
+    "copy": "batch_identity.csv",
+    "bytes": 4141,
+    "sha256": "247d0338f3ebb1acd31d0138fd4e987a72273d1e1658d271aa3a2dfa5cc9f1ef"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\full_forward_checks.csv",
+    "copy": "full_forward_checks.csv",
+    "bytes": 616,
+    "sha256": "34260911be38087a80abc5c8461ffaa7d182716cc24efbd2675f2281bdb59ece"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\missing_returns.csv",
+    "copy": "missing_returns.csv",
+    "bytes": 8731,
+    "sha256": "b770b2b8e33906398c3eb6e642e0fb4c0e2869ae884a20c0e3854e4ed98d7da0"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\seed42_reproduction.csv",
+    "copy": "seed42_reproduction.csv",
+    "bytes": 93,
+    "sha256": "dc9810cec97223239a5ee15466649829a1d4f56eded752df4e69fcff6895b964"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 75874,
+    "sha256": "63e85b68b374e81e7004986c24121df6a6c4c4bb6c3f9f46007b0567434f8e53"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 33312,
+    "sha256": "664f5b703dea2f11e58234847bb38c088f2b280a7311f84918505b240e837d35"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\member_logits.csv",
+    "copy": "member_logits.csv",
+    "bytes": 43572,
+    "sha256": "3fc372340d1b0f0711755cef7833eef5773951e0f3ba6713f9e8eab2424f7c76"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 37072,
+    "sha256": "78637b128869f14fe8ca93e0844e568bacaa8f7579586d5e4d5c4d40d6ccdf57"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 18202,
+    "sha256": "ed80180fb52cfa6b3794679bf468df83c5ea5e46dcd36e8c15222771913a9974"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\members_summary.csv",
+    "copy": "members_summary.csv",
+    "bytes": 802,
+    "sha256": "6e163c37c3282621b1285c65fe25576eb56d7c3ef649524fb7a91a32d3614d69"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\member_correlations.csv",
+    "copy": "member_correlations.csv",
+    "bytes": 537,
+    "sha256": "7062f273177fa28952488e25c12942d8663e0ee4b3601024732a970917a84232"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\validation_ensemble.csv",
+    "copy": "validation_ensemble.csv",
+    "bytes": 258,
+    "sha256": "3cf654dcea8efbb10bb15cf4e6324a6ee511f75e6894ab26210f04be705b3562"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\selected_steps.csv",
+    "copy": "selected_steps.csv",
+    "bytes": 614,
+    "sha256": "45cde4525f01b503e3ef49717566897f8dec7fe4eb037de5d92f2deec494ecbc"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 6122,
+    "sha256": "70d30c957e0b0a099fc297cbac3da76c21224dba079f656b322c6d5797546af8"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 11735,
+    "sha256": "c84b733490503e4dd9a2c6dc2f34734f16d62fb98bd4bed1a328acfedadeccaa"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\attribution.csv",
+    "copy": "attribution.csv",
+    "bytes": 4955,
+    "sha256": "c1eedddfe0e1beadbfbf63628efcfc22b37c6e7e4730906947fbaf02e4d074a3"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\yearly.csv",
+    "copy": "yearly.csv",
+    "bytes": 68704,
+    "sha256": "5794e585e3fa1c0100dd5d8d21086a0effb6034549d1271dc693ca5e8173d021"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 18835,
+    "sha256": "037ea3ebd95336bb3a55a0d95393d5f2d6fd708cfd70d0db2ffcc83d4c554ae1"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 727,
+    "sha256": "bd699eb30de2566b02eeb058bab14a970acb7b5f60c1118960c80970614764cb"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 727,
+    "sha256": "bd699eb30de2566b02eeb058bab14a970acb7b5f60c1118960c80970614764cb"
+  }
+]

@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "family": "B0",
+      "encoder_seed": 42,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\dataset_v2\\exploratory_F0\\runs\\research_B0_F0_s42_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "27837bda3ae70cfee18e0aefb60d125d0b49d6f695f3445872ea5238d951f49f",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [],
+      "config_sha256": "bd57708c8ae8d950f290be47ff1129483fba910434ae6153d4aac588f81c71a0",
+      "checkpoint_sha256": "844f7d500c6dc8f08acbdc64006e615b4b7447d8feacf4cb40752491ed36596b",
+      "committed_state": false,
+      "best_epoch": 1,
+      "best_checkpoint_sha256": "c61cf6bdbced6cb6ca082487d9f20a34ee7b58e073b3e7f69a94adf2a35b6d6a",
+      "best_encoder_sha256": "4bd1803f450a8a632a619c8f3a37ca7feffcbe355222613d11d7daf7fa63ef1c",
+      "original_validation_argmax_verified": true
+    },
+    {
+      "family": "B0",
+      "encoder_seed": 43,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s43_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "a0bf2b873f27bff81decbec4ee1913a2d5cf0579a62fe938683f68d8e7dfb5d5",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "107e13b811e35188d617a65122ea34dc03ac0d5b2bd277f6cdf8c4a3e3ff44d5",
+      "checkpoint_sha256": "8e473f8b9f34bc2550afd928b1f4aa8e3cde978716b60fb0983c3f7a8b341b2e",
+      "committed_state": true,
+      "best_epoch": 6,
+      "best_checkpoint_sha256": "c00a4259ea177a56f62971f9e8d0ba8fc5c4f9baecfe075a901ef50015728078",
+      "best_encoder_sha256": "158da6863337ff61a74b235cae954f6de61d243b90f04a77cc70df47cdcfee3a",
+      "original_validation_argmax_verified": true
+    },
+    {
+      "family": "B0",
+      "encoder_seed": 44,
+      "run": "C:\\Users\\14815\\Projects\\quant\\outputs\\kit_transfer_seed_v1\\runs\\research_B0_F0_s44_a1",
+      "vector_epoch": 3,
+      "encoder_sha256": "1e621ed4555c110438d530261dbfc575e7afc6017c2197b2c478febc8b9289df",
+      "encoder_tensors": 90,
+      "training_weeks": 779,
+      "config_differences": [
+        "seed",
+        "source_sha256"
+      ],
+      "config_sha256": "6a1dc30772cad337f0ff80f9ce7a7e21030c0f16c00d947fda0c3fa2ff7f2eee",
+      "checkpoint_sha256": "5389fca2e1ae6d2a446fb969d3b7f5436b21aa5d3c83f2b9d3272efe646e6284",
+      "committed_state": true,
+      "best_epoch": 3,
+      "best_checkpoint_sha256": "5389fca2e1ae6d2a446fb969d3b7f5436b21aa5d3c83f2b9d3272efe646e6284",
+      "best_encoder_sha256": "1e621ed4555c110438d530261dbfc575e7afc6017c2197b2c478febc8b9289df",
+      "original_validation_argmax_verified": true
+    }
+  ]
+}

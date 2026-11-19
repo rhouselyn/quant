@@ -1,0 +1,200 @@
+[
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\run.py",
+    "copy": "run.py",
+    "bytes": 16667,
+    "sha256": "b176c5a01749bfcfc87b5ae43ff4db9c68fc94f2f10c1740dc771e6d27a67b4e"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\check_native.py",
+    "copy": "check_native.py",
+    "bytes": 6073,
+    "sha256": "e1425b03fa298c18bf13947ef19418bf059895b332c8979c9cfeab499c243750"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_encoder.py",
+    "copy": "single_encoder.py",
+    "bytes": 3338,
+    "sha256": "7c91665be8a2807fdcb515db5defcad1cc1947e08885d69fe40d18d2a18d28b0"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 22333,
+    "sha256": "bd136f3c2b4ae0078a5c0da9bd1716cce6d61b2c44a8dc9851be0ac57fc621c0"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\protocol_at_main_run.md",
+    "copy": "protocol_at_main_run.md",
+    "bytes": 3650,
+    "sha256": "458977397c8ccf5cce48b26a3686fb5fa131fdd6bb78bab7b52b98251fff216a"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\run.log",
+    "copy": "run.log",
+    "bytes": 2208,
+    "sha256": "dd59f8b97309af79814b0f37d763681e3c88a6a32921f653b6b0de8e2edf8f1f"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\native_check.log",
+    "copy": "native_check.log",
+    "bytes": 142,
+    "sha256": "3312045b90099fbfe6b730cc5f6872c5991f2a801b2ddb3172c4f68b507688c7"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single.log",
+    "copy": "single.log",
+    "bytes": 942,
+    "sha256": "a66ba76b86c33ce37ee47c1c4457504ca345aa2d710b17087fbfc3bc445530f8"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\raw_label_checks.csv",
+    "copy": "raw_label_checks.csv",
+    "bytes": 88218,
+    "sha256": "3073dcb778d920536f6dc7cc1ea0bad2b56786d376f4b83417a95f7d27baa19b"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\native_price_label_checks.csv",
+    "copy": "native_price_label_checks.csv",
+    "bytes": 173231,
+    "sha256": "5e628048c35443946944df84ff798c14ea4a65d91255799db2aed980997d5f73"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\encoding_checks.csv",
+    "copy": "encoding_checks.csv",
+    "bytes": 150856,
+    "sha256": "c53eccc3815a5f02bf3dba34ad38da964fe5b1e9cbb6566963ca3fdfc2ad0ee7"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\encoding_summary.csv",
+    "copy": "encoding_summary.csv",
+    "bytes": 585,
+    "sha256": "f8532ed431d11f07f83bf803b53a8056a93b2159a4164f3018690b39cc64b676"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\full_forward_checks.csv",
+    "copy": "full_forward_checks.csv",
+    "bytes": 575,
+    "sha256": "ce3313ae20835497525afcce7650d6e6d33e814d00caf3839f24c36fc03b6f27"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\loss_checks.csv",
+    "copy": "loss_checks.csv",
+    "bytes": 842,
+    "sha256": "2235147914bf7741f50af1b6d49f3d6f2c97b03f755cf3b40d6cdad7f5e23033"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\native_training_checks.csv",
+    "copy": "native_training_checks.csv",
+    "bytes": 492,
+    "sha256": "1f88b8a3ffdb8186b7ea202c763712145e3fccd82caebeb552c90eda7fa4ea4e"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 70402,
+    "sha256": "cb4e90b85cc915d00a924df05ec103c620f268876b62a18841dff9a5f184690d"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_training_loss.csv",
+    "copy": "single_training_loss.csv",
+    "bytes": 23298,
+    "sha256": "cf4696b65d133f7cf061ed25349cc4775678b0cd5d06477bd25c2c26fe83c2a5"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 3382,
+    "sha256": "6477bd918f7539a30e53b6dd429a2732b94432c349d9ff3aa9d3bda2c0c5c827"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 22846,
+    "sha256": "e83ae67992ba455529bb59a45687651df40e6f23301ee5b9d4e5d955545e2dd5"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_validation_lock.json",
+    "copy": "single_validation_lock.json",
+    "bytes": 12828,
+    "sha256": "83a19da2b8b38121453be10d0ca1ce933c02cc2ec93d07c69676aa155dc88a2c"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 17090,
+    "sha256": "d9f979cbc08ee760fe57a87e6ccac60ae963a55d0fdf5de4c1c584efb418d739"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_signals.csv",
+    "copy": "single_signals.csv",
+    "bytes": 10375,
+    "sha256": "dd09f43d292e21349b44ae9a8e4663b51a77cfbb970a570588d1f3eed81cf54c"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 9999,
+    "sha256": "5e38d280189a40ff81298d083f70eec7fd91d5f2c31de42a1838b064b160a581"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_metrics.csv",
+    "copy": "single_metrics.csv",
+    "bytes": 5009,
+    "sha256": "5841f167551c8912e0e460c1ef1054b557eb7b797de7d7a720ffa95f94aefd81"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_paired.csv",
+    "copy": "single_paired.csv",
+    "bytes": 3327,
+    "sha256": "e9ae7dffa0b4513126a468324df395a51981d6f43eed1834e3d0f09f2e92f298"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\trace_checks.csv",
+    "copy": "trace_checks.csv",
+    "bytes": 216,
+    "sha256": "d92faa0af1f0d8b131d96e7ac0008b98fb01710884aa491ac6b975a26b9ac66a"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\parameter_checks.csv",
+    "copy": "parameter_checks.csv",
+    "bytes": 516,
+    "sha256": "6c18db325a7a035c1cc782f6bc41513c60ef09ff01eb24464060b5cb97f446da"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\direction_checks.csv",
+    "copy": "direction_checks.csv",
+    "bytes": 184,
+    "sha256": "d42acdf4163eeb26247dc43b749d71d8c3e97c87268dcf9a0b5688ce46562ce5"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\single_directions.csv",
+    "copy": "single_directions.csv",
+    "bytes": 57,
+    "sha256": "82c9a689443ad688cca86550ba39d892bbb161c3786514082d778736244e30ec"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\native_vs_single.csv",
+    "copy": "native_vs_single.csv",
+    "bytes": 5727,
+    "sha256": "e38864f3c04707b0ee61a3991d485aba4c802ac5a6d37af78e18dff76eb22c0b"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 10341,
+    "sha256": "e34652237bcf19f394ef87060737e6e79447b9d9806abec6dbe1555f4ee0a2c9"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 441,
+    "sha256": "ad8bc1036480b2ef2800fb1963780ce1d6c3d4025ce6c3a2035f036b8b5e0487"
+  },
+  {
+    "source": "outputs\\bce_old_retrain_audit_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 441,
+    "sha256": "ad8bc1036480b2ef2800fb1963780ce1d6c3d4025ce6c3a2035f036b8b5e0487"
+  }
+]

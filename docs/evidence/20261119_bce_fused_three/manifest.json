@@ -1,0 +1,242 @@
+[
+  {
+    "source": "outputs\\bce_fused_three_v1\\prepare.py",
+    "copy": "prepare.py",
+    "bytes": 16895,
+    "sha256": "09a2c5d27a8d2afed92503d2ba1019a7c1f671bc847e9419728e573015efcf91"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\train_replay.py",
+    "copy": "train_replay.py",
+    "bytes": 7550,
+    "sha256": "4b817f1daae12a8f667a5f74a9aac79d8926472ff9b3c7f4f323c16d8268fe46"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 24338,
+    "sha256": "0ed1ac86c06e2f8ce0f90d542487a5a06335ff735a0d56c1856a41130e35c526"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\finish.py",
+    "copy": "finish.py",
+    "bytes": 811,
+    "sha256": "5d981e8830f7598a04aa9ebad2db54cd34b762c3d2436945233ffc3169b3d2ee"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\queue_entry.json",
+    "copy": "queue_entry.json",
+    "bytes": 360,
+    "sha256": "477bb1b590507b96ea4c62f8e259a63e19ed2b9b6d3de8169418f607587194d9"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\frozen_auxiliary.json",
+    "copy": "frozen_auxiliary.json",
+    "bytes": 6069,
+    "sha256": "085b1900a3c476e3211376b82000fd53713a8f2e98d9c9b6a8ad9e862250f2c5"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\prepare.log",
+    "copy": "prepare.log",
+    "bytes": 8678,
+    "sha256": "34b00359d884894734200d74f6143b0cc1e9e6e6210a9601bfca20495f531c6d"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\train.log",
+    "copy": "train.log",
+    "bytes": 6023,
+    "sha256": "58f667bd118f4461a7bb15c9ea870b14b7ab8d1b486522acf5d11e8f27f946ad"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\model_inventory.json",
+    "copy": "model_inventory.json",
+    "bytes": 10706,
+    "sha256": "09dd6302b77ab4d504292d8d5610e5e7f8118d4a1348136d5f2c9ce43a7d3e0c"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\dates.json",
+    "copy": "dates.json",
+    "bytes": 16993,
+    "sha256": "87477c8113ed0218aff67b1459d50936635c28556a0f192d9baef8450dedad7f"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\full_forward_checks.csv",
+    "copy": "full_forward_checks.csv",
+    "bytes": 1122,
+    "sha256": "c97b43a4f60d52e91091fc1fee80a0c3093e60f91361d7f549fe2fc2f6512a38"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\resource.csv",
+    "copy": "resource.csv",
+    "bytes": 3685,
+    "sha256": "cc4afb0196c808d337d6f751464df20bd6cf4d299209bc8aa4ad7703f7f040ac"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\signal_baskets.csv",
+    "copy": "signal_baskets.csv",
+    "bytes": 929094,
+    "sha256": "9a65888431c625453fca51c63e42dbc52eb8366e95d6f967af469bd90a928378"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\roster_changes.csv",
+    "copy": "roster_changes.csv",
+    "bytes": 47044,
+    "sha256": "a8cef0eb8993ae33887de0d52a16bb67a870bf36a92fe2fd7f8f7bc532373fa2"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\roster_summary.csv",
+    "copy": "roster_summary.csv",
+    "bytes": 367,
+    "sha256": "2cc386039dd4095200bbf3ecd4558ac91ad080a2c5dd27c6c10ba743b04fea89"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\missing_returns.csv",
+    "copy": "missing_returns.csv",
+    "bytes": 13377,
+    "sha256": "e8ede9c6345df64cf0d668ded09d84c5e3a88fa7e6b2a746df1eb501ad730f21"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\identity.csv",
+    "copy": "identity.csv",
+    "bytes": 3338,
+    "sha256": "a4c145fbb37e1cb137227f1873abfcd7d6352f6e0ccfd32d7af97b377f0eb560"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\augmentation.csv",
+    "copy": "augmentation.csv",
+    "bytes": 54,
+    "sha256": "2d101cfcd30b286a7cfc84a40617505f4b15cc7a7f125e7d26c2c1c1d8e2757f"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\coverage.csv",
+    "copy": "coverage.csv",
+    "bytes": 356,
+    "sha256": "882376ed8508ac033e31704832a4313f2b8e0289d8340a41af801ba56a1c3a32"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 75852,
+    "sha256": "fd93f686e4ff7a6e9ca15a82d13cc32d7c79044227516242d9fb2b6cb1ca4817"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 64863,
+    "sha256": "a68eb7b7e2157a4fda94cfc888c3f68a29f9fd74d80250910ae9c325fe931333"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\member_logits.csv",
+    "copy": "member_logits.csv",
+    "bytes": 44690,
+    "sha256": "d40156dfd05029788062f37a62cd5491c732d9351732eec228d1598fcbc2b3d0"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 37430,
+    "sha256": "8287d13dd4ea1e50b2274480fe0034fe19bff7a6fdcacc0950c180b65151744a"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 28509,
+    "sha256": "fe16866d563924f04c5b88d776ba197b27c29100b6a686c0c6f0b61cf74f2171"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\actual_baskets.csv",
+    "copy": "actual_baskets.csv",
+    "bytes": 468484,
+    "sha256": "35565c9f8d83a23febf37121652decba655dff41c21ee11e67fffb42c43c45f6"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 8852,
+    "sha256": "d052900c7f0f2bb50276dc9e9cbb5a6ff2f342c98950e1be4addad548908ee46"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\label_changes.csv",
+    "copy": "label_changes.csv",
+    "bytes": 139,
+    "sha256": "2ed83348815332dd9bb4b9af37bac55c8fd17dcba837c31097aead219df1eb52"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\selected_steps.csv",
+    "copy": "selected_steps.csv",
+    "bytes": 360,
+    "sha256": "4ac545d42753e2c17c19075105f1fbd6f897fa3bb5cab36c7002dd85055b91e8"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\validation_ensemble.csv",
+    "copy": "validation_ensemble.csv",
+    "bytes": 284,
+    "sha256": "1c9dd20140b119d840ea96b0897fd90cd58a0f3bf5f9d605fea8a6054cac1022"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\actual_roster_changes.csv",
+    "copy": "actual_roster_changes.csv",
+    "bytes": 11844,
+    "sha256": "6ecde7b7f3a43c87e04fd20ef6385fca189575450a78d672f608b9b44f4cb6b3"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\actual_roster_summary.csv",
+    "copy": "actual_roster_summary.csv",
+    "bytes": 140,
+    "sha256": "ae1fba3dda2d2393b5fa23281abee3b41bd4418d107c376e70a01bf68f4ddab4"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 27817,
+    "sha256": "cd3164386c3e6ee6af94ed81f44851312538b81f25aa97590c20280636702b2e"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\yearly.csv",
+    "copy": "yearly.csv",
+    "bytes": 108695,
+    "sha256": "8446c15407b27f3f0932fd0e3f63b780445d94678d29175419433109e372b490"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\comparison.csv",
+    "copy": "comparison.csv",
+    "bytes": 857,
+    "sha256": "3667938ab200caa6c2a6cb50e4404892ef2090cb6f921c120d46e1fa25bc0412"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\cagr_contrasts.csv",
+    "copy": "cagr_contrasts.csv",
+    "bytes": 3959,
+    "sha256": "90bbfdb58989ea16212ed466779753b95ad2c1b406bba5457916ebe3c9c3fcb4"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 55915,
+    "sha256": "558fd8133eae49dce045ab9ddbb33c8e38d120127527848729d0628472d68afc"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 508,
+    "sha256": "1b85a5b35d23d64c7c135c28417702e88880445fe63065b685a140b7800424eb"
+  },
+  {
+    "source": "outputs\\bce_fused_three_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 508,
+    "sha256": "1b85a5b35d23d64c7c135c28417702e88880445fe63065b685a140b7800424eb"
+  },
+  {
+    "source": "outputs\\bce_three_encoder_v1\\train_replay.py",
+    "copy": "fit_source.py",
+    "bytes": 9200,
+    "sha256": "2d21be06797cb6f8980ad58c964bb00480e293976518ae8b26ff9d409decfdf2"
+  },
+  {
+    "source": "docs\\research_20261119_bce_fused_three_protocol.md",
+    "copy": "protocol.md",
+    "bytes": 4849,
+    "sha256": "aea83335fed216158e5f1b72e31aa7cd95911de57ce6f93779add81009374cfc"
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\run.py",
+    "copy": "run.py",
+    "bytes": 13806,
+    "sha256": "68166f1d60ac3e54f9947f9ed0efbb3df7ad4251ccb0c9f2c1c8878b5a67267b"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\report.py",
+    "copy": "report.py",
+    "bytes": 19938,
+    "sha256": "9704775697bf5a3dd6c9e7365651f6fdc5d0aae790f458cdecba4a69c32fc0fa"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\run.log",
+    "copy": "run.log",
+    "bytes": 5654,
+    "sha256": "8f00a15155b9fca139e43863bc52e2ff469cbf7838a4674342986d90333ebf84"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\model_inventory.json",
+    "copy": "model_inventory.json",
+    "bytes": 4632,
+    "sha256": "84c44b5ba8a256eba07018096fadd5e96e3521e472eed1adafbbbcc03fd5667b"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\training_loss.csv",
+    "copy": "training_loss.csv",
+    "bytes": 394181,
+    "sha256": "245de427c5f6a4bf52500c8f1a81adf4321f8ef89df460578a97a97ac4699da3"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\parameter_snapshots.csv",
+    "copy": "parameter_snapshots.csv",
+    "bytes": 35777,
+    "sha256": "a7b9c0549dba469ebe2fc0cc3c9559fedf5ddad8b9659b4043c16dd91c8a2a19"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\loss_checks.csv",
+    "copy": "loss_checks.csv",
+    "bytes": 3867,
+    "sha256": "3b23302e003317e241a7d186c2a67be8a74fc26eb8b03f0602d506430292930e"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\prefix_checks.csv",
+    "copy": "prefix_checks.csv",
+    "bytes": 608,
+    "sha256": "1969788c54d8e35f6db04446c072fe9ecc8be5a4bdd82225356ca4702c1af72b"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\f10_parameter_reproduction.csv",
+    "copy": "f10_parameter_reproduction.csv",
+    "bytes": 361,
+    "sha256": "645f6e8298e264a64943003b4de1b0edd632aa300053a9890bf1a93a32d6da76"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\validation_lock.json",
+    "copy": "validation_lock.json",
+    "bytes": 69147,
+    "sha256": "09f246090472332d3134cb2b3c8f40c88637ba2bfe8f9aa4db9630bdb4d70b2f"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\selection_lock.json",
+    "copy": "selection_lock.json",
+    "bytes": 4100,
+    "sha256": "6b570027f52a5fbb4f168afabe854e6add730218669538c5cbbc90aab97a5542"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\validation_ensemble.csv",
+    "copy": "validation_ensemble.csv",
+    "bytes": 906,
+    "sha256": "e770b9ee0cdc28bd07a1e7dbfb6cfb9ae4fa2cdbe28786688c6855d23dab78ec"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\signals.csv",
+    "copy": "signals.csv",
+    "bytes": 63922,
+    "sha256": "67bd89e8b68c3f91740d42194b16b4d6cfc672df9c772ea882ea269a18253d51"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\member_logits.csv",
+    "copy": "member_logits.csv",
+    "bytes": 185073,
+    "sha256": "73a7cc5615725da0da06525c9377c868d282f45392792fa42489284f3fdb725d"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\metrics.csv",
+    "copy": "metrics.csv",
+    "bytes": 14653,
+    "sha256": "c545b3ba4b2d41fc047fa89b5995133b8fd62885a4a328eca9e369ae242c5f66"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\validation_selected_metrics.csv",
+    "copy": "validation_selected_metrics.csv",
+    "bytes": 4982,
+    "sha256": "02de66496de51e38658a9c855889d2d05136ce95dc200e341d562b9e32293e2f"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\checkpoint_checks.csv",
+    "copy": "checkpoint_checks.csv",
+    "bytes": 1374,
+    "sha256": "6a6e898d8c54d420f7118dd34c56559728c4810f9d2044bde1105e532b329e00"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\training_segments.csv",
+    "copy": "training_segments.csv",
+    "bytes": 6335,
+    "sha256": "1fcbaf890f6321fde02c884c58f2e204668dbcf95e3bc37e2fe2e987727a99dd"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\paired.csv",
+    "copy": "paired.csv",
+    "bytes": 19724,
+    "sha256": "fc7b9b28be6ca87659d9ae60ea1b08c9e62fcadc75bfe93aa01c1f796d7568ca"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\selected_paired.csv",
+    "copy": "selected_paired.csv",
+    "bytes": 3771,
+    "sha256": "31bd2cee23252e584845a4481307537c9fbfc50980e83613b979c32050024ac6"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\directions.csv",
+    "copy": "directions.csv",
+    "bytes": 2442,
+    "sha256": "99bb129c0e96cec0f2fdf1dc67bc5ca7d27fa70d8e2e6fa2ff10e5f2515e0488"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\yearly.csv",
+    "copy": "yearly.csv",
+    "bytes": 55104,
+    "sha256": "0f27dec9508d43ac75c80c7628356360ecfc85e565a72b3b0d5c9b4c2094164f"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\freeze_comparison.csv",
+    "copy": "freeze_comparison.csv",
+    "bytes": 414,
+    "sha256": "0f9697234baa2b2a5e49dccca1fc5013f41c2b59bcdba576ede373309bfd2242"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\inputs.json",
+    "copy": "inputs.json",
+    "bytes": 33349,
+    "sha256": "80f091c1cfcde069a8c5f39c45bdc09be0995208e48a6c883dfcc921d44adbc3"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\verification.json",
+    "copy": "verification.json",
+    "bytes": 623,
+    "sha256": "b5505796cc7aa514f3d44ce93c1108aaddc036ee3975fa2206d6de0d934a6125"
+  },
+  {
+    "source": "outputs\\bce_freeze_steps_v1\\state.json",
+    "copy": "state.json",
+    "bytes": 623,
+    "sha256": "b5505796cc7aa514f3d44ce93c1108aaddc036ee3975fa2206d6de0d934a6125"
+  },
+  {
+    "source": "docs\\research_20261119_bce_freeze_steps_protocol.md",
+    "copy": "protocol.md",
+    "bytes": 4371,
+    "sha256": "de8e5d086a7c7f6cb4d988005650b0223c354fcf0e78816241cc11e8cea69b82"
+  }
+]
